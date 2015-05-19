@@ -1,6 +1,44 @@
 
-$logo-font: "Kaushan Script", cursive;
+	$logo-font: "Kaushan Script", cursive;
+	$white       : #FFFFFF;
+// $ghost       : #FAFAFA;
+// $snow        : #F9F9F9;
+// $vapor       : #F6F6F6;
+// $white-smoke : #F5F5F5;
+// $silver      : #EFEFEF;
+// $smoke       : #EEEEEE;
+// $gainsboro   : #DDDDDD;
+// $iron        : #CCCCCC;
+// $base        : #AAAAAA;
+// $aluminum    : #999999;
+// $jumbo       : #888888;
+// $monsoon     : #777777;
+// $steel       : #666666;
+// $charcoal    : #555555;
+// $tuatara     : #444444;
+	$oil         : #333333;
+	$jet         : #222222;
+// $black       : #000000;
 
+	$dark-blue: #001829;
+	$primary-blue: #0060A1;
+	$green: #00A141;
+	$bg-grey: #fcfcfc;
+
+// We use these as default colors throughout
+// $primary-color: #008CBA;
+// $secondary-color: #e7e7e7;
+	$alert-color: #F22C00;
+
+html, body{
+	height: 100%;
+}
 .logo{
 	font-family: $logo-font;
+	color: $primary-blue;
+}
+
+@mixin full-height(){
+    height: 100%;
+    overflow: hidden;
 }

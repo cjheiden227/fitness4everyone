@@ -98,7 +98,7 @@ $font-family-custom-sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
 // $font-weight-normal: normal;
 // $font-weight-bold: bold;
 
-// $white       : #FFFFFF;
+	$white       : #FFFFFF;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
@@ -114,21 +114,26 @@ $font-family-custom-sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
 // $steel       : #666666;
 // $charcoal    : #555555;
 // $tuatara     : #444444;
-// $oil         : #333333;
-// $jet         : #222222;
+	$oil         : #333333;
+	$jet         : #222222;
 // $black       : #000000;
+
+	$dark-blue: #001829;
+	$primary-blue: #0060A1;
+	$green: #00A141;
+	$bg-grey: #fcfcfc;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
 // $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
+	$alert-color: #F22C00;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-// $body-bg: $white;
-// $body-font-color: $jet;
+	$body-bg: $bg-grey;
+	$body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -216,7 +221,7 @@ $font-family-custom-sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
 $header-font-family: $font-family-custom-serif;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: $jet;
+$header-font-color: $white;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -1402,9 +1407,10 @@ $paragraph-font-family: $font-family-custom-sans-serif;
 
 // $include-html-top-bar-classes: $include-html-classes;
 
+
 // Background color for the top bar
-// $topbar-bg-color: $oil;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: rgba(#FFFFFF, 0.75);
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: rem-calc(45);
@@ -1415,19 +1421,19 @@ $paragraph-font-family: $font-family-custom-sans-serif;
 // $topbar-title-font-size: rem-calc(17);
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: $white;
-// $topbar-link-color-hover: $white;
-// $topbar-link-color-active: $white;
-// $topbar-link-color-active-hover: $white;
+	$topbar-link-color: $oil;
+	$topbar-link-color-hover: $primary-blue;
+	$topbar-link-color-active: $alert-color;
+	$topbar-link-color-active-hover: $primary-blue;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-// $topbar-link-bg-hover: $jet;
-// $topbar-link-bg-color-hover: $charcoal;
-// $topbar-link-bg-active: $primary-color;
-// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
-// $topbar-link-font-family: $body-font-family;
+ 	$topbar-link-bg-hover: $white;
+	$topbar-link-bg-color-hover: $white;
+	$topbar-link-bg-active: $white;
+	$topbar-link-bg-active-hover: scale-color($white, $lightness: -14%);
+	$topbar-link-font-family: $font-family-custom-serif;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: ($topbar-height / 3);
 // $topbar-back-link-size: rem-calc(18);
