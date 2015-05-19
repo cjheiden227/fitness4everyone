@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :equipment, only: [:index]
-  resources :trainer, only: [:index]
-  resources :contacts, only: [:index, :create]
+  resources :contacts, only: [:index, :create], :path=>"contact"
+  match '/equipment' => 'equipment#index', as: :equipment, via: :get
+  match '/personal_training' => 'trainer#index', as: :trainer, via: :get
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
