@@ -97,10 +97,5 @@
     <line class="whiteStroke" x1="0" y1="95%" 
           x2="50%" y2="62.5%" />
 
-
-
-    <line class="bigStroke" x1="50%" y1="65%" 
-          x2="50%" y2="100%" />
- 
   
 </svg>
