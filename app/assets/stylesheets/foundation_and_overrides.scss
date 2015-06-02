@@ -159,7 +159,7 @@ $font-family-custom-sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$small-breakpoint:  em-calc(640);
+$small-breakpoint:  em-calc(860);
 $medium-breakpoint: em-calc(1024);
 $large-breakpoint:  em-calc(1440);
 $xlarge-breakpoint: em-calc(1920);
@@ -1415,12 +1415,12 @@ $topbar-bg-color: $transparent;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-$topbar-height: rem-calc(80);
+$topbar-height: rem-calc(100);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
-// $topbar-title-font-size: rem-calc(17);
+$topbar-title-font-size: rem-calc(24);
 
 // Set the link colors and styles for top-level nav
 	$topbar-link-color: $oil;
@@ -1428,7 +1428,7 @@ $topbar-height: rem-calc(80);
 	$topbar-link-color-active: $primary-blue;
 	$topbar-link-color-active-hover: $primary-blue;
 // $topbar-link-weight: $font-weight-normal;
-// $topbar-link-font-size: rem-calc(13);
+ $topbar-link-font-size: rem-calc(16);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 	$topbar-link-bg: $clear;
  	$topbar-link-bg-hover: $clear;

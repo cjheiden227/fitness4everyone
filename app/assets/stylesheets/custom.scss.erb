@@ -15,6 +15,17 @@ $testimonial-font: "aleo", Cambria, "Times New Roman", serif;
   #{$name}: #{$argument};
 }
 
+@mixin circle-icon($height, $image_url){
+	width: rem-calc($height);
+	height: rem-calc($height);
+	@include vendor-prefix(border-radius, rem-calc($height/2));
+	@include vendor-prefix(box-shadow, 1px 1px 1px rgba(0,0,0,1));
+	margin-left: auto;
+  	margin-right: auto;
+  	background-image: url($image_url);
+  	background-size: cover;
+}
+
 html, body{
 	@include full-height();
 }
@@ -29,20 +40,17 @@ html, body{
 
 #top-overlay li>a {
 	@include vendor-prefix(transition, all 200ms ease-in-out);
-
 }
 
 #top-overlay li>a:hover, #top-overlay li.active {
-  text-decoration: underline;
   color: $primary-blue;
-
 }
 
 .logo-font{
 	font-family: $logo-font !important;
 }
+
 .logo, #logo{
-	
 	color: $primary-blue;
 	@include vendor-prefix(transition, all 500ms ease-in-out);
 }
@@ -57,32 +65,8 @@ html, body{
 
 .whiteStroke {
     stroke: rgba(253, 253, 253, .05);
-    stroke-width: 2;
-     
+    stroke-width: 2;     
 }
-
-.circle{
-	width: 200px;
-	height: 200px;
-	background: $bg-grey;
-	-moz-border-radius: 100px;
-	-webkit-border-radius: 100px;
-	border-radius: 100px;
-	margin-left: auto;
-  	margin-right: auto;
-  	@include vendor-prefix(box-shadow, 1px 1px 1px rgba(0,0,0,1));
-  	background-image: url(http://lorempixel.com/output/animals-q-g-640-480-9.jpg);
-  	background-size: cover;
-  	@media #{$small-only} {
-		width: 150px;
-		height: 150px;
-		-moz-border-radius: 75px;
-		-webkit-border-radius: 75px;
-		border-radius: 75px;
-	}
-
-}
-
 
 #jumbo{
 	@include full-height();
@@ -91,8 +75,16 @@ html, body{
 		@include full-height();
 		@include vendor-prefix(background-size, cover);
 		width: 100%;
-		background-image: image-url('header.svg'), linear-gradient(to bottom, rgba(0,96,161,0.57) 0%, rgba(73,155,234,1) 90%), image-url('womens-fitness.jpg');
-		margin-top: -85px;
+		background-image: image-url('header.svg'), linear-gradient(to bottom, rgba(0,142,238,0.57) 0%, rgba(0,111,187,1) 90%), image-url('womens-fitness.jpg');
+		margin-top: -105px;
+		position: relative;
+
+		#jumbo_button{
+			position: absolute;
+			top: 62%;
+		  	left: 50%;
+		  	transform: translate(-50%, -50%);
+		}
 
 		@media #{$small-only} {
 			margin-top: 0;
@@ -123,70 +115,115 @@ html, body{
 	}
 }
 
-#subsection{
+#subsection, #testimonials{
 	height: auto;
-	// padding-bottom: 8rem;
-	background: rgba(28,61,93,1);
+}
+
+#subsection .row:first-of-type{
+	margin-top: 5rem;
+}
+
+#subsection{
+
+	background: $primary-blue;
+	
+	.subheading-row{
+		position: relative;
+	}
+
+	.vertical-center{
+	  	position: absolute;
+	  	top: 50%;
+	  	transform: translateY(-50%);	
+  	}
+	
+	.content-block{
+		margin-bottom: 5rem;
+	}
+
+  	.show-for-small-only .row, .show-for-medium-up{
+		margin-top: 2rem;
+  	}
 
 	#topTriangleColor{
-		fill: rgba(36,77,117,1);
-	
+		fill: rgba(0,55,93, 1);
    	}
    
    	p, h1, h2, h3, h4, h5, h6{
    		color: $white;
    	}
 
+   	.circle{
+		@include circle-icon(250, "http://placehold.it/350x150");
+	  	@media #{$small-only} {
+			@include circle-icon(200, "http://placehold.it/350x150");
+		}
+	}
+}
+
+#testimonials .row{
+	margin-top: 2rem;
 }
 
 #testimonials{
-	height: auto;
-	margin-bottom: 4rem;
+	background-color: lighten($primary-blue, 7.5%);
+	padding-bottom: 10rem;
 	p, h1, h2, h3, h4, h5, h6{
-		color: $oil;
+		color: $white;
 	}
+
 	p{
 		font-family: $testimonial-font;
-
 	}
+
 	#bottomTriangleColor{
 		margin: 0 auto;
-		fill: rgba(28,61,93,1);
-		
+		fill: rgba($primary-blue,1);
    	}
+
   	.testimonial-row{
-  		height: 200px;
-  		position: relative;
-
+  		height: rem-calc(400);
+  		@media #{$small-only} {
+			height: rem-calc(250);
+		}
   	}
-  	.vertical-center{
+
+	.testimonial-row>.row, .vertical-parent{
+		height: 100%;
+	}
+	
+	.vertical-parent{
+		position: relative;
+	}
+
+	.vertical-center{
 	  	position: absolute;
 	  	top: 50%;
-	  	left: 65%;
-	  	transform: translate(-50%, -50%);
-  		
+	   	transform: translateY(-50%);
+		
   	}
 
-  	.vertical-center-even{
-	  	position: absolute;
-	  	top: 50%;
-	  	transform: translate(0, -50%);
-  		
-  	}
-
-	.testimonial-text{
-		background-color: #fff;
-		@include vendor-prefix(box-shadow, 0px 1px 1px 0px rgba(0,0,0,0.75))
+  	.circle{
+		@include circle-icon(400, "http://placehold.it/350x150");
+		margin: 0;
+	  	@media #{$small-only} {
+			@include circle-icon(250, "http://placehold.it/350x150");
+		}
 	}
 }
 
 #footer{
+
 	height: 50%;
 	background-color: #001829;
 	background-image: image-url('footerlogo.png');
 	background-repeat: no-repeat;
 	background-position: center center; 
 	background-size: contain;
+	.row{
+		margin: 0;
+	}
+
 
 }
 
