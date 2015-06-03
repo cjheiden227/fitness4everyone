@@ -1,0 +1,22 @@
+@mixin full-height(){
+    height: 100%;
+}
+
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+@mixin circle-icon($height, $image_url){
+	width: rem-calc($height);
+	height: rem-calc($height);
+	@include vendor-prefix(border-radius, rem-calc($height/2));
+	@include vendor-prefix(box-shadow, 1px 1px 1px rgba(0,0,0,1));
+	margin-left: auto;
+  	margin-right: auto;
+  	background-image: $image_url;
+  	background-size: cover;
+}

@@ -1,0 +1,124 @@
+$logo-font: "Kaushan Script", cursive;
+$testimonial-font: "aleo", Cambria, "Times New Roman", serif;
+@import "foundation_and_overrides";
+@import "mixins";
+
+html, body{
+	@include full-height();
+}
+
+#navbar{
+	z-index: 9999;
+}
+
+#top-overlay li {
+  	background: $clear; 
+}
+
+#top-overlay li>a, #footer #footerNav li>a {
+	@include vendor-prefix(transition, all 200ms ease-in-out);
+}
+
+#top-overlay li>a:hover, #top-overlay li.active {
+  color: $primary-blue;
+}
+
+.logo-font{
+	font-family: $logo-font !important;
+}
+
+.logo, #logo{
+	color: $primary-blue;
+	@include vendor-prefix(transition, all 500ms ease-in-out);
+}
+
+.logo:hover, #logo:hover{
+	color: $alert-color;
+}
+
+.text-shadow{
+	text-shadow: 1px 1px #000000;
+}
+
+.whiteStroke {
+    stroke: rgba(253, 253, 253, .05);
+    stroke-width: 2;     
+}
+
+.vertical-parent{
+		position: relative;
+}
+
+.vertical-center{
+	  	position: absolute;
+	  	top: 50%;
+	   	transform: translateY(-50%);
+		
+}
+
+#footer{
+	margin-top: -2rem;
+	height: 65%;
+	color: $white;
+	background-image: image-url('footerlogo.png');
+	background-repeat: no-repeat;
+	background-position: center center; 
+	background-size: contain;
+
+	.row{
+		height: 100%;
+	}
+	
+	.border{
+		border:1px solid $bg-grey;
+	}
+	p{
+		padding: 0 1rem 0 1rem;
+		@media #{$medium-up}{
+			padding: 0 2rem 0 2rem;
+		}
+	}
+	#footerNav{
+		padding: 1.5rem 0 .75rem 0;
+		color: $white;
+		font-family: $font-family-custom-serif;
+
+		li{
+			padding-left: 1rem;
+			font-size: rem-calc(16);
+			list-style-type: none;
+			display: inline-block;
+			@media #{$medium-up}{
+				font-size: rem-calc(18);
+			}
+			a{
+				color: $white;
+			}
+			a.active, a:hover{
+				color: lighten($primary-blue, 20%);
+			}
+		}
+	}
+
+	.icons{
+	
+		li{
+			display: inline;
+			margin: 1rem;
+			@media #{$small-only}{
+				margin: .5rem;
+			}
+			.icon-img{
+				width: rem-calc(50);
+				// @media #{$small-only}{
+				// 	width: rem-calc(30);
+				// }
+				// @media #{$super-small-only}{
+				// 	width: rem-calc(30);
+				// }
+			}
+		}
+
+	}
+
+}

@@ -10,10 +10,10 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul id="top-overlay" class="right">
-      <li class="active"><a href="#">Home</a></li>
-       <li><a href="#">Equipment</a></li>
-       <li><a href="#">Personal Training</a></li>
-       <li><a href="#">Contact</a></li>
+      <li class=<%=is_active?(root_path)%> ><%=link_to("Home", root_path)%></li>
+      <li class=<%=is_active?(equipment_path)%>><%=link_to("Equipment", equipment_path)%></li>
+      <li class=<%=is_active?(trainer_path)%>><%=link_to("Personal Training", trainer_path)%></li>
+      <li class=<%=is_active?(contacts_path)%>><%=link_to("Contact", contacts_path)%></li>
     </ul>
   </section>
 </nav>

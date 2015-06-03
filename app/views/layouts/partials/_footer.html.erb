@@ -1,5 +1,28 @@
-<footer id="footer">
-	<div class="row">
-		<div class="small-12 columns"></div>
+
+<footer class="text-center text-shadow" id="footer">
+	<div class="vertical-parent row">
+		<div class="vertical-center small-centered small-12 columns">
+			<div class="row">
+				<div class="border small-centered small-12 medium-11 columns">
+					<nav>
+					<ul id="footerNav">
+						<li><%=link_to("Home", root_path, class: is_active?(root_path))%></li>
+						<li><%=link_to("Equipment", equipment_path, class: is_active?(equipment_path))%></li>
+						<li><%=link_to("Personal Training", trainer_path, class: is_active?(trainer_path))%></li>
+						<li><%=link_to("Contact", contacts_path, class: is_active?(contacts_path))%></li>
+					</ul>
+					</nav>
+					<h5>The Foundation of Fitness for Everyone</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ut, veritatis repellat? Nihil molestias aliquid, unde porro reprehenderit officiis eius fugiat, non voluptatibus, quo accusamus animi quia quas sint aspernatur.</p> 
+					<h6>Find Fitness for Everyone on your social network!</h6>
+					<ul class="icons">
+						<li><a href="http://www.facebook.com"><%=image_tag('facebook.png', class: "icon-img")%></a></li>
+						<li><a href="http://www.twitter.com"><%=image_tag('twitter.png', class: "icon-img")%></a></li>
+						<li><a href="http://www.linkein.com"><%=image_tag('linkedin.png', class: "icon-img")%></a></li>
+					</ul>
+				</div>
+			
+			</div>
+		</div>
 	</div>
 </footer>

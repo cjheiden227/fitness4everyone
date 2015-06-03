@@ -1,72 +1,5 @@
 
-$logo-font: "Kaushan Script", cursive;
-$testimonial-font: "aleo", Cambria, "Times New Roman", serif;
-@import "foundation_and_overrides";
-
-@mixin full-height(){
-    height: 100%;
-}
-
-@mixin vendor-prefix($name, $argument) {
-  -webkit-#{$name}: #{$argument};
-  -ms-#{$name}: #{$argument};
-  -moz-#{$name}: #{$argument};
-  -o-#{$name}: #{$argument};
-  #{$name}: #{$argument};
-}
-
-@mixin circle-icon($height, $image_url){
-	width: rem-calc($height);
-	height: rem-calc($height);
-	@include vendor-prefix(border-radius, rem-calc($height/2));
-	@include vendor-prefix(box-shadow, 1px 1px 1px rgba(0,0,0,1));
-	margin-left: auto;
-  	margin-right: auto;
-  	background-image: url($image_url);
-  	background-size: cover;
-}
-
-html, body{
-	@include full-height();
-}
-
-#navbar{
-	z-index: 9999;
-}
-
-#top-overlay li {
-  	background: $clear; 
-}
-
-#top-overlay li>a {
-	@include vendor-prefix(transition, all 200ms ease-in-out);
-}
-
-#top-overlay li>a:hover, #top-overlay li.active {
-  color: $primary-blue;
-}
-
-.logo-font{
-	font-family: $logo-font !important;
-}
-
-.logo, #logo{
-	color: $primary-blue;
-	@include vendor-prefix(transition, all 500ms ease-in-out);
-}
-
-.logo:hover, #logo:hover{
-	color: $alert-color;
-}
-
-.text-shadow{
-	text-shadow: 1px 1px #000000;
-}
-
-.whiteStroke {
-    stroke: rgba(253, 253, 253, .05);
-    stroke-width: 2;     
-}
+@import "globals";
 
 #jumbo{
 	@include full-height();
@@ -152,11 +85,15 @@ html, body{
    	p, h1, h2, h3, h4, h5, h6{
    		color: $white;
    	}
-
+	p{
+		@media #{$super-small-only} {
+			font-size: .85rem;
+		}
+	}
    	.circle{
-		@include circle-icon(250, "http://placehold.it/350x150");
+		@include circle-icon(250, image-url('placeholder.gif'));
 	  	@media #{$small-only} {
-			@include circle-icon(200, "http://placehold.it/350x150");
+			@include circle-icon(150, image-url('placeholder.gif'));
 		}
 	}
 }
@@ -174,17 +111,26 @@ html, body{
 
 	p{
 		font-family: $testimonial-font;
+		@media #{$super-small-only} {
+			font-size: .85rem;
+		}
 	}
 
 	#bottomTriangleColor{
 		margin: 0 auto;
-		fill: rgba($primary-blue,1);
+		fill: rgba($primary-blue, 1);
    	}
 
   	.testimonial-row{
   		height: rem-calc(400);
+  		@media #{$medium-only} {
+			height: rem-calc(300);
+		}
   		@media #{$small-only} {
 			height: rem-calc(250);
+		}
+		@media #{$super-small-only} {
+			height: rem-calc(175);
 		}
   	}
 
@@ -192,40 +138,30 @@ html, body{
 		height: 100%;
 	}
 	
-	.vertical-parent{
-		position: relative;
-	}
-
-	.vertical-center{
-	  	position: absolute;
-	  	top: 50%;
-	   	transform: translateY(-50%);
-		
-  	}
-
   	.circle{
-		@include circle-icon(400, "http://placehold.it/350x150");
+		@include circle-icon(400, image-url('placeholder.gif'));
 		margin: 0;
+		@media #{$medium-only} {
+			@include circle-icon(300, image-url('placeholder.gif'));
+		}
 	  	@media #{$small-only} {
-			@include circle-icon(250, "http://placehold.it/350x150");
+			@include circle-icon(250, image-url('placeholder.gif'));
+		}
+		@media #{$super-small-only} {
+			@include circle-icon(175, image-url('placeholder.gif'));
 		}
 	}
 }
 
-#footer{
-
-	height: 50%;
+#curveDownColor, #footer{
 	background-color: #001829;
-	background-image: image-url('footerlogo.png');
-	background-repeat: no-repeat;
-	background-position: center center; 
-	background-size: contain;
-	.row{
-		margin: 0;
-	}
-
-
 }
+
+#curveDownColor{
+	fill: lighten($primary-blue, 7.5%);
+}
+
+
 
 
 
