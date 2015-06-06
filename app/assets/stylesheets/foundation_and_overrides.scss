@@ -90,6 +90,8 @@ $include-html-global-classes: $include-html-classes;
 
 $font-family-custom-serif: "aleobold", Cambria, "Times New Roman", serif;
 $font-family-custom-sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
+$logo-font: "Kaushan Script", cursive;
+$testimonial-font: "aleo", Cambria, "Times New Roman", serif;
 //$font-family-sans-serif: "aleobold", Helvetica, Roboto, Arial, sans-serif;
 //$font-family-serif: "aleobold", Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
@@ -159,7 +161,7 @@ $font-family-custom-sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 $super-small-breakpoint: em-calc(640);
-$small-breakpoint:  em-calc(860);
+$small-breakpoint:  em-calc(767);
 $medium-breakpoint: em-calc(1024);
 $large-breakpoint:  em-calc(1440);
 $xlarge-breakpoint: em-calc(1920);
@@ -1423,6 +1425,10 @@ $topbar-height: rem-calc(100);
 // $topbar-title-weight: $font-weight-normal;
 $topbar-title-font-size: rem-calc(24);
 
+
+
+
+
 // Set the link colors and styles for top-level nav
 	$topbar-link-color: $oil;
 	$topbar-link-color-hover: $primary-blue;
@@ -1474,7 +1480,7 @@ $topbar-menu-icon-color: $primary-blue;
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
-// $topbar-breakpoint: #{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
+$topbar-breakpoint: rem-calc(860); // Change to 9999px for always mobile layout
 // $topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
 
 // Top-bar input styles
