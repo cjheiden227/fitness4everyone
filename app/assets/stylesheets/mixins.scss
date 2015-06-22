@@ -20,9 +20,13 @@
 	@include vendor-prefix(box-shadow, 1px 1px 1px rgba(0,0,0,1));
 	margin-left: auto;
   margin-right: auto;
+ 
+}
+@mixin circle-icon-image($height, $image-url){
+  @include circle-icon($height);
+  background-image: image-url($image-url);
   background-size: cover;
 }
-
 @mixin background(){
   @include full-height();
   @include vendor-prefix(background-size, cover);

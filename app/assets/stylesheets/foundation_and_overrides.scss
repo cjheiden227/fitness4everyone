@@ -134,7 +134,7 @@ $testimonial-font: "aleo", Cambria, "Times New Roman", serif;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-	$body-bg: $bg-grey;
+	$body-bg:$bg-grey;
 	$body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -1473,8 +1473,8 @@ $topbar-dropdown-link-bg-hover: $transparent;
 // $topbar-menu-link-weight: $font-weight-bold;
  $topbar-menu-link-color: $primary-blue;
 $topbar-menu-icon-color: $primary-blue;
-// $topbar-menu-link-color-toggled: $jumbo;
-// $topbar-menu-icon-color-toggled: $jumbo;
+$topbar-menu-link-color-toggled: lighten($primary-blue, 5%);
+$topbar-menu-icon-color-toggled: lighten($primary-blue, 5%);
 // $topbar-menu-icon-position: $opposite-direction; // Change to $default-float for a left menu icon
 
 // Transitions and breakpoint styles

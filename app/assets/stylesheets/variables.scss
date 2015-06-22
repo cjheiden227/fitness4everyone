@@ -32,7 +32,12 @@ $screen: "only screen";
 $landscape: "#{$screen} and (orientation: landscape)";
 $portrait: "#{$screen} and (orientation: portrait)";
 $super-small-only: "#{$screen} and (max-width: #{upper-bound($super-small-range)})";
-$small-up: $screen;
+$super-small-up: $screen;
+
+$super-small-phablet:"#{$screen} and (max-width: #{upper-bound($super-small-range)}) and (max-height:760px)";
+$small-phablet:"#{$screen} and (max-width: #{upper-bound($small-range)}) and (max-height:760px)";
+
+$small-up: "#{$screen} and (min-width:#{lower-bound($small-range)})";
 $small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
 
 $medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";

@@ -31,7 +31,7 @@
 		
 	
 		@media #{$portrait} and (max-width:#{upper-bound($small-range)}){
-			top: -80%;
+			top: -90%;
 		}
 		@media #{$landscape} and (max-width:#{upper-bound($small-range)}){
 			top: -95%;
@@ -44,12 +44,6 @@
 
 	.bannertext{
 		color: white !important;
-	}
-
-	.jumbo-top{
-		padding: 1rem;
-		border:1px solid $bg-grey;
-		@include vendor-prefix(box-shadow,  0px 1px 1px 0px rgba(0,0,0,0.25));
 	}
 
 	.jumbo{
@@ -67,9 +61,10 @@
 }
 
 #subsection{
-
+	
 	background: $primary-blue;
 	
+
 	.subheading-row{
 		position: relative;
 	}
@@ -92,9 +87,6 @@
 		fill: rgba(0,55,93, 1);
    	}
    
-   	p, h1, h2, h3, h4, h5, h6{
-   		color: $white;
-   	}
 	p{
 		@media #{$super-small-only} {
 			font-size: .85rem;
@@ -102,14 +94,6 @@
 	}
    	.circle{
 		@include circle-icon(250);
-
-		img{
-			display: block;
-            height: 100%;
-             width: 100%; 
-            min-width: 100%;
-            min-height: 100%;
-		}
 	  	@media #{$small-only} {
 			@include circle-icon(150);
 		}
@@ -128,11 +112,15 @@
 }
 
 #testimonials{
-	background-color: lighten($primary-blue, 7.5%);
+	background-image: image-url('Underglow.svg');
+	background-position: bottom;
+
+	background-size: cover;
+
+	
+	background-repeat: no-repeat;
+	// background-color: lighten($primary-blue, 10%);
 	padding-bottom: 10rem;
-	p, h1, h2, h3, h4, h5, h6{
-		color: $white;
-	}
 
 	p{
 		font-family: $testimonial-font;
@@ -157,8 +145,18 @@
 		@media #{$super-small-only} {
 			height: rem-calc(250);
 		}
+	
   	}
-
+  	p.author{
+  		font-size: 1.25rem;
+  		@media #{$medium-up}{
+			text-align: right;
+  		}
+	}
+	
+	.testimonial-even{
+		padding-right: 2rem;
+	}
 	.testimonial-row>.row, .vertical-parent{
 		height: 100%;
 	
@@ -166,12 +164,7 @@
 	
   	.circle{
 		@include circle-icon(400);
-		img{
-			display: block;
-            height: 100%;
-             width: 100%; 
-       
-		}
+	
 		margin: 0;
 		@media #{$medium-only} {
 			@include circle-icon(300);
@@ -184,15 +177,6 @@
 		}
 	}
 }
-
-#curveDownColor, #footer{
-	background-color: #001829;
-}
-
-#curveDownColor{
-	fill: lighten($primary-blue, 7.5%);
-}
-
 
 
 
