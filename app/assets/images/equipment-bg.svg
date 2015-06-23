@@ -2,9 +2,18 @@
  <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
  <g>
   <title>Layer 1</title>
-  <ellipse stroke="#e5e5e5" ry="227.500004" rx="309.50001" id="svg_1" cy="237.100004" cx="322.100002" opacity="0.5" fill-opacity="0" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#000000"/>
-  <ellipse stroke="#e5e5e5" id="svg_3" ry="160.500007" rx="198.500012" cy="243.599986" cx="315.599985" opacity="0.5" fill-opacity="0" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#000000"/>
+ <!--  <ellipse stroke="#e5e5e5" cy="260" cx="320" ry="230" rx="310" id="svg_1"  opacity="0.5" fill-opacity=".35" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#000000"/>
+  <ellipse stroke="#e5e5e5" id="svg_3" cy="260" cx="320" ry="160" rx="200" opacity="1" fill-opacity="0.25" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#000000"/>
+ -->
+   <ellipse stroke="#e5e5e5" id="svg_5"  cy="260" cx="320" ry="140" rx="160" opacity="0.5" fill-opacity=".35" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#000000"/>
+   
+  <ellipse stroke="#e5e5e5" id="svg_5"  cy="260" cx="320" ry="120" rx="140" opacity="0.5" fill-opacity=".35" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#000000"/>
+   
+    <ellipse stroke="#e5e5e5" id="svg_5"  cy="260" cx="320" ry="100" rx="120" opacity=".355" fill-opacity=".35" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#000000"/>
 
-  <ellipse stroke="#e5e5e5" id="svg_5" ry="41.236792" rx="51.00002" cy="247.619648" cx="316.600009" opacity="0.5" fill-opacity="0" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#000000"/>
+    <ellipse stroke="#e5e5e5" id="svg_5"  cy="260" cx="320" ry="80" rx="100" opacity=".5" fill-opacity=".35" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#000000"/>
+ 
+       <ellipse stroke="#e5e5e5" id="svg_5"  cy="260" cx="320" ry="60" rx="80" opacity=".5" fill-opacity=".45" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#000000"/>
+     
  </g>
 </svg>

@@ -1,0 +1,183 @@
+@import "mixins";
+@import "variables";
+@import "foundation/functions";
+
+#jumbo{
+	@include full-height();
+
+	.background{
+		@include background();
+		background-image: image-url('header.svg'), linear-gradient(to bottom, rgba(0,142,238,0.57) 0%, rgba(0,111,187,1) 90%), image-url('womens-fitness.jpg');
+		position: relative;
+
+		#jumbo_button{
+			position: absolute;
+			top: 62%;
+		  	left: 50%;
+		  	transform: translate(-50%, -50%);
+		  	@media #{$super-small-only} {
+		  		width: 59%;
+		  	}
+		}
+
+		@media #{$small-only} {
+			margin-top: 0;
+		}
+	}
+
+	#jumbotron{
+		position: relative;
+		top: -78%;
+		
+	
+		@media #{$portrait} and (max-width:#{upper-bound($small-range)}){
+			top: -90%;
+		}
+		@media #{$landscape} and (max-width:#{upper-bound($small-range)}){
+			top: -95%;
+		}
+		@media #{$landscape} and (max-width:#{upper-bound($super-small-range)}){
+			top: -95%;
+		}
+		
+	}
+
+	.bannertext{
+		color: white !important;
+	}
+
+	.jumbo{
+		width: 100%;
+		margin-top: 2.5rem;
+	}
+}
+
+#subsection, #testimonials{
+	height: auto;
+}
+
+#subsection .row:first-of-type{
+	margin-top: 5rem;
+}
+
+#subsection{
+	
+	background: $primary-blue;
+	
+
+	.subheading-row{
+		position: relative;
+	}
+
+	.vertical-center{
+	  	position: absolute;
+	  	top: 50%;
+	  	transform: translateY(-50%);	
+  	}
+	
+	.content-block{
+		margin-bottom: 5rem;
+	}
+
+  	.show-for-small-only .row, .show-for-medium-up{
+		margin-top: 2rem;
+  	}
+
+	#topTriangleColor{
+		fill: rgba(0,55,93, 1);
+   	}
+   
+	p{
+		@media #{$super-small-only} {
+			font-size: .85rem;
+		}
+	}
+   	.circle{
+		@include circle-icon(250);
+	  	@media #{$small-only} {
+			@include circle-icon(150);
+		}
+	}
+}
+
+#testimonials .row{
+	margin-top: 2rem;
+	@media #{$small-only} {
+			margin-top: 1rem;
+	}
+	@media #{$super-small-only} {
+			margin-top: 1rem;
+	}
+
+}
+
+#testimonials{
+	background-image: image-url('Underglow.svg');
+	background-position: bottom;
+
+	background-size: cover;
+
+	
+	background-repeat: no-repeat;
+	// background-color: lighten($primary-blue, 10%);
+	padding-bottom: 10rem;
+
+	p{
+		font-family: $testimonial-font;
+		@media #{$super-small-only} {
+			font-size: .85rem;
+		}
+	}
+
+	#bottomTriangleColor{
+		margin: 0 auto;
+		fill: rgba($primary-blue, 1);
+   	}
+
+  	.testimonial-row{
+  		height: rem-calc(400);
+  		@media #{$medium-only} {
+			height: rem-calc(300);
+		}
+  		@media #{$small-only} {
+			height: rem-calc(250);
+		}
+		@media #{$super-small-only} {
+			height: rem-calc(250);
+		}
+	
+  	}
+  	p.author{
+  		font-size: 1.25rem;
+  		@media #{$medium-up}{
+			text-align: right;
+  		}
+	}
+	
+	.testimonial-even{
+		padding-right: 2rem;
+	}
+	.testimonial-row>.row, .vertical-parent{
+		height: 100%;
+	
+	}
+	
+  	.circle{
+		@include circle-icon(400);
+	
+		margin: 0;
+		@media #{$medium-only} {
+			@include circle-icon(300);
+		}
+	  	@media #{$small-only} {
+			@include circle-icon(250);
+		}
+		@media #{$super-small-only} {
+			@include circle-icon(250);
+		}
+	}
+}
+
+
+
+
