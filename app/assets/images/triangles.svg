@@ -1,13 +1,98 @@
-<?xml version="1.0"?>
-<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
- <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
- <g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-  <polygon opacity="0.5" stroke="#ffffff" id="svg_21" stroke-width="1" points="499.7900186777115,242.00003576278687 0.21003210544586182,445.8673605918884 0.21003210544586182,38.13265371322632 499.7900186777115,242.00003576278687 " strokeWidth="1" strokecolor="#ffffff" fill="#007ed4" edge="157.901368" orient="x" sides="3" shape="regularPoly" cy="55.00001" cx="-85.999996"/>
- <!--  <polygon opacity="0.45" stroke="#ffffff" id="svg_22" stroke-width="1" points="413.78997802734375,238.70007801055908 0.8766803741455078,407.20070362091064 0.8766803741455078,70.1994218826294 413.78997802734375,238.70007801055908 " strokeWidth="1" strokecolor="#ffffff" fill="#007ed4" edge="157.901368" orient="x" sides="3" shape="regularPoly" cy="55.00001" cx="-85.999996"/>
-  <polygon opacity="0.45" stroke="#ffffff" id="svg_23" stroke-width="1" points="333.12329864501953,241.31287574768066 0.21002197265625,377.1673069000244 0.21002197265625,105.45844459533691 333.12329864501953,241.31287574768066 " strokeWidth="1" strokecolor="#ffffff" fill="#007ed4" edge="157.901368" orient="x" sides="3" shape="regularPoly" cy="55.00001" cx="-85.999996"/>
-  <polygon opacity="0.45" stroke="#ffffff" id="svg_24" stroke-width="1" points="235.7899627685547,240.38621520996094 0.21002197265625,336.5210876464844 0.21002197265625,144.25132751464844 235.7899627685547,240.38621520996094 " strokeWidth="1" strokecolor="#ffffff" fill="#007ed4" edge="157.901368" orient="x" sides="3" shape="regularPoly" cy="55.00001" cx="-85.999996"/>
-    <polygon opacity="0.45" stroke="#ffffff" id="svg_20" stroke-width="1" points="637.7899606115793,239.70835876464844 0.8767080307006836,478.2423400878906 0.8767080307006836,1.174314260482788 637.7899606115793,239.70835876464844 " strokeWidth="1" strokecolor="#ffffff" fill="#007ed4" edge="157.901368" orient="x" sides="3" shape="regularPoly" cy="55.00001" cx="-85.999996"/>
-    <polygon opacity="0.45" stroke="#ffffff" id="svg_20" stroke-width="1" points="640,239.70835876464844 0.8767080307006836,478.2423400878906 0,0 637.7899606115793,239.70835876464844 " strokeWidth="1" strokecolor="#ffffff" fill="#007ed4" edge="157.901368" orient="x" sides="3" shape="regularPoly" cy="55.00001" cx="-85.999996"/> -->
- </g>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="600"
+   height="400"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="triangles.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="362.35781"
+     inkscape:cy="1.6956209"
+     inkscape:document-units="px"
+     inkscape:current-layer="g4235"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1600"
+     inkscape:window-height="845"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       orientation="1,0"
+       position="-202.03051,377.79705"
+       id="guide3757" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="3"
+     inkscape:groupmode="layer"
+     id="g4235"
+     transform="translate(0,-652.36218)"
+     style="display:inline">
+    <path
+       id="path3767-4-4"
+       style="opacity:0.07000002;fill:none;stroke:#000000;stroke-width:31.44865036px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       d="M 459.30387,1347.7828 -13.589588,778.37026 M 842.85633,875.62084 -364.28492,741.96065 M -55.502482,1243.9307 789.77674,795.43845 M 708.72449,1119.5329 -168.50614,724.35476 m -35.02741,368.15254 653.37889,-263.08428"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     style="display:inline"
+     transform="translate(0,-652.36218)"
+     id="g4239"
+     inkscape:groupmode="layer"
+     inkscape:label="4" />
+  <g
+     inkscape:label="5"
+     inkscape:groupmode="layer"
+     id="g4243"
+     transform="translate(0,-652.36218)"
+     style="display:inline" />
+  <g
+     style="display:inline"
+     transform="translate(0,-652.36218)"
+     id="g4247"
+     inkscape:groupmode="layer"
+     inkscape:label="6" />
+  <g
+     inkscape:label="1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-652.36218)"
+     style="display:inline" />
+  <g
+     style="display:inline"
+     transform="translate(0,-652.36218)"
+     id="g4231"
+     inkscape:groupmode="layer"
+     inkscape:label="2" />
 </svg>

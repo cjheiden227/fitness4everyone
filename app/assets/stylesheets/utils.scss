@@ -1,9 +1,6 @@
 @import "foundation/functions";
 
-@mixin full-height(){
-    height: 100%;
-}
-
+//Mixins
 @mixin vendor-prefix($name, $argument) {
   -webkit-#{$name}: #{$argument};
   -ms-#{$name}: #{$argument};
@@ -22,14 +19,24 @@
   margin-right: auto;
  
 }
+
 @mixin circle-icon-image($height, $image-url){
   @include circle-icon($height);
   background-image: image-url($image-url);
   background-size: cover;
 }
-@mixin background(){
-  @include full-height();
+
+//Extends
+
+%background{
   @include vendor-prefix(background-size, cover);
+  height: 100%;
   width: 100%;
-  margin-top: -105px;
+
+  
 }
+
+%block{
+    margin: 2rem 0 2rem 0;
+}
+

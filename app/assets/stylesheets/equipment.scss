@@ -1,4 +1,4 @@
-@import "mixins";
+@import "utils";
 @import "variables";
 @import "foundation/functions";
 
@@ -6,38 +6,35 @@
 	fill: #005895;
 }
 
-#equipment-header{
-	
-	@include full-height();
-	background-image: image-url('triangles2.svg'), image-url('equipment-header-3.jpg');
+#equipment-header.background{
+	background-image: linear-gradient(to bottom, rgba(0,142,238,0.45) 0%, rgba(0,88,149,1) 100%), image-url('overlay.svg'), image-url('island.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 50% 50%;;
-	.background{
-		@include background();
-		background-image: linear-gradient(to bottom, rgba(0,142,238,0.5) 0%, rgba(0,88,149,1) 100%);
-		@media #{$small-only} {
-			margin-top: 0;
-		}
-	}
+	background-attachment: scroll, scroll, fixed;
+	background-position: center center;
+	margin-top: -105px;
+}
+
+#equipment-header{
+	height: 100%;
+
 	#top_content{
-		height: 100%;
-
+	
 		position: relative;
-		top: -70%;
-		@media #{$small-only} {
-			top: -85%;
-		}
-		.border{
-			// TODO: Make mixin to target "medium down"
+		top: 10%;
+
+		.first{
+			float: right;
 		}
 
+		.third{
+			float: left;
+		}
 		.circle{
 			@include circle-icon(150);
 			border: 5px solid $bg-grey;
 			
 			@media #{$small-only}{
-				@include circle-icon(150);
+				@include circle-icon(100);
 				
 			}
 			@media #{$super-small-only}{
@@ -45,9 +42,15 @@
 			
 			}
 			@media #{$screen} and (min-width: 500px) and (min-height:800px) and (max-width:860px){
-				@include circle-icon(150);
+				@include circle-icon(100);
 			
 			}
+		}
+		.second{
+			border: none;
+			box-shadow: none;
+			background-image: image-url('f4e.svg');
+			background-size: contain;
 		}
 		#icons{
 			margin-top: 2rem;
@@ -103,10 +106,10 @@
 		}
 		@media #{$super-small-only}{
 			height: rem-calc(200);
-			margin: 5rem 0 5rem 0;
+			margin: 3rem 0 3rem 0;
 		}
 		@media #{$small-only}{
-			margin: 5rem 0 5rem 0;
+			margin: 3rem 0 3rem 0;
 			height: rem-calc(200);
 		}
 	}
@@ -208,17 +211,33 @@
 }
 
 #equip-contact{
-	height: auto;
-	margin: 0 0 10rem 0;
+	background-image: image-url('triangles.svg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+
 	#curveDownColor{
 		background-color: lighten($primary-blue, 10%);
 		fill: #0060A1;
 	
 	}
+	.content{
+		@media #{$medium-up} {
+			margin-top: 5%;
+		}
+		
+	}
 	.circle{
 		@include circle-icon(300);
+		@media #{$super-small-only}{
+			@include circle-icon(200);
+		}
+		@media #{$small-only}{
+			@include circle-icon(200);
+		}
 	}
-	.row{
-		margin-top: 10rem;
+	.vertical-parent{
+		height: 300px;
 	}
 }

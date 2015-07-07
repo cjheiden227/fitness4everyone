@@ -1,7 +1,15 @@
 
-@import "mixins";
+@import "utils";
 @import "variables";
 @import "foundation/functions";
+
+.background{
+	@extend %background;
+}
+
+.block{
+	@extend %block;
+}
 
 @media #{$small-only}  {
 	$topbar-title-font-size: rem-calc(16);
@@ -11,7 +19,7 @@
  }
 
 html, body{
-	@include full-height();
+	height: 100%;
 	background-color: lighten($primary-blue, 10%);
 	color: $white;
 }
@@ -27,6 +35,7 @@ html, body{
 	border:1px solid $bg-grey;
 	@include vendor-prefix(box-shadow,  0px 1px 1px 0px rgba(0,0,0,0.25));
 }
+
 #top-overlay{
 	@media #{$super-small-only}{
 		background-color: rgba(255, 255, 255, 0.8);
@@ -85,25 +94,19 @@ html, body{
 	   	transform: translateY(-50%);
 		
 }
+
 .circle{
 	img{
 		display: block;
         height: 100%;
         width: 100%; 
         min-width: 100%;
-         min-height: 100%;
+        min-height: 100%;
 	}
 	
 }
 
-.background{
-	@include background();
 
-}
-
-#curveDownColor, #footer{
-	background-color: #001829;
-}
 
 #curveDownColor{
 	fill: lighten($primary-blue, 10%);
@@ -113,6 +116,7 @@ html, body{
 	fill: darken(rgba(0,111,187,1), 18.5%);
 }
 #footer{
+	background-color: #001829;
 	margin-top: -2rem;
 	background-image: image-url('footerlogo.png');
 	background-repeat: no-repeat;
@@ -187,12 +191,7 @@ html, body{
 			}
 			.icon-img{
 				width: rem-calc(50);
-				// @media #{$small-only}{
-				// 	width: rem-calc(30);
-				// }
-				// @media #{$super-small-only}{
-				// 	width: rem-calc(30);
-				// }
+	
 			}
 		}
 

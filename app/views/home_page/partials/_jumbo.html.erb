@@ -1,15 +1,18 @@
-<section id="jumbo">
-	<div class="background">
-		<%=link_to("Get Fit Today", contacts_path, id: "jumbo_button", class: "text-shadow large button radius success")%>
-	</div>
-	<div id="jumbotron">
-		<header>
-			<div class="row">
-				<div class="text-shadow border text-center small-centered small-12 medium-10 large-6 columns">
-					<h1 class="logo-font">Fitness for Everyone</h1>
-					<p class="bannertext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed consectetur mauris, nec vulputate eros. Aenean fringilla dolor a ultrices ullamcorper. Nam sit amet libero ligula. </p>
-				</div>
+<section class="background text-center" id="jumbo">
+	<header id="jumbotron">
+		<div class="row">
+			<div class="border text-shadow small-centered small-12 medium-10 large-6 columns">
+				<h1 class="logo-font">Fitness for Everyone</h1>
+				<p class="bannertext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed consectetur mauris, nec vulputate eros. Aenean fringilla dolor a ultrices ullamcorper. Nam sit amet libero ligula. </p>	
 			</div>
-		</header>
-	</div>
+		</div>
+		<div class="row">
+			<div class="block small-centered small-12 columns">
+				<%=link_to("Get Fit Today", contacts_path, id: "jumbo_button", class: "text-shadow large button radius success")%>
+			</div>
+		</div>
+		
+	</header>
+
+	<%=image_tag('divider_logo.svg', class: 'divider-logo') %>
 </section>
