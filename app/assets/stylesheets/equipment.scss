@@ -1,3 +1,4 @@
+
 @import "utils";
 @import "variables";
 @import "foundation/functions";
@@ -6,12 +7,9 @@
 	fill: #005895;
 }
 
-#equipment-header.background{
-	background-image: linear-gradient(to bottom, rgba(0,142,238,0.45) 0%, rgba(0,88,149,1) 100%), image-url('overlay.svg'), image-url('island.jpg');
-	background-repeat: no-repeat;
-	background-attachment: scroll, scroll, fixed;
-	background-position: center center;
-	margin-top: -105px;
+.jumbo.background{
+	background-image: linear-gradient(to bottom, rgba(0,142,238,0.45) 0%, rgba(0,88,149,1) 100%), image-url('equipment-bg.jpg');
+
 }
 
 #equipment-header{
@@ -20,7 +18,9 @@
 	#top_content{
 	
 		position: relative;
-		top: 10%;
+
+			top: 10%;
+	
 
 		.first{
 			float: right;

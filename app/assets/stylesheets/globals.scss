@@ -11,6 +11,27 @@
 	@extend %block;
 }
 
+.jumbo{
+	
+	background-repeat: no-repeat;
+	background-attachment: scroll, scroll, fixed;
+	background-position: center center;
+}
+
+.fade-in{
+	animation: fade-in .6s linear 1;
+}
+
+@keyframes fade-in {
+	0%{
+		opacity: 0;
+
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
 @media #{$small-only}  {
 	$topbar-title-font-size: rem-calc(16);
 }

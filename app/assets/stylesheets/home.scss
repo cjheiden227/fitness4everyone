@@ -2,12 +2,9 @@
 @import "variables";
 @import "foundation/functions";
 
-#jumbo.background{
-	background-image: linear-gradient(to bottom, rgba(0,142,238,0.35) 0%, rgba(0,96,161,1) 75%), image-url('home-bg.jpg');
-	margin-top: -105px;
-	background-repeat: no-repeat;
+#jumbo.jumbo.background{
+	background-image: linear-gradient(to bottom, rgba(0,96,161,0.25) 0%, rgba(0,96,161,1) 100%), image-url('overlay.svg'), image-url('island.jpg');
 	background-size: cover;
-	background-position: center center;
 	background-attachment: scroll, scroll, fixed;
 }
 
@@ -18,7 +15,14 @@
 #jumbo{
 	height: 110%;
 	#jumbotron{
-		top: 20%;
+
+		top: 10%;
+		.circle{
+			@include circle-icon(50);
+			background: none;
+			border: solid 1px $bg-grey;
+			box-shadow: none;
+		}
 		
 	}
 
@@ -30,7 +34,8 @@
 		position: absolute;
 		left: 50%;
 		transform: translate(-50%, 0%);
-		bottom: 0;
+		bottom: 100px;
+
 		
 	}
 
@@ -44,7 +49,7 @@
 
 #subsection{
 	
-	background-image:   radial-gradient(ellipse at center, rgba(73,155,234,0.2) 0%, rgba(21,113,182,0.6) 48%, rgba(0,96,161,1) 68%), image-url('fitness4everyone.jpg');
+	background-image:   linear-gradient(to bottom, rgba(0,96,161,1) 0%, rgba(12,106,173,0.75) 25%, rgba(24,115,185,0.35) 50%, rgba(12,106,173,0.75) 75%, rgba(0,96,161,1) 100%), image-url('fitness4everyone.jpg');
 	background-attachment: scroll, fixed;
 	background-position: center center;
 	background-size: cover;
