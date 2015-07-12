@@ -1,0 +1,27 @@
+@import "utils";
+@import "variables";
+@import "foundation/functions";
+
+#trainer_jumbo.background{
+	background-image:  linear-gradient(to bottom, rgba(73,155,234,0.53) 0%, rgba(0,96,161,1) 100%), image-url('moutains.svg'), image-url('trainer.jpg');
+}
+
+#trainer_jumbo{
+	#header{
+		position: relative;
+		top: 10%;
+	}
+}
+
+#certs.background{
+	background-image: radial-gradient(ellipse at center, rgba(59,137,255,1) 0%, rgba(21,125,194,1) 28%, rgba(0,96,161,1) 56%, rgba(0,96,161,1) 67%, rgba(0,96,161,1) 100%);
+
+
+}
+
+#certs{
+	padding: 4rem 0 4rem 0;
+	background-color: $primary-blue;
+	height: auto;
+
+}

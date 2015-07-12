@@ -12,7 +12,7 @@
    id="svg3036"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="triangles2.svg">
+   sodipodi:docname="moutains.svg">
   <metadata
      id="metadata3050">
     <rdf:RDF>
@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,7 +41,7 @@
      id="namedview3046"
      showgrid="false"
      inkscape:zoom="0.84125"
-     inkscape:cx="-14.699951"
+     inkscape:cx="-157.93918"
      inkscape:cy="188.46881"
      inkscape:window-x="0"
      inkscape:window-y="30"
@@ -50,7 +50,7 @@
   <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
   <g
      id="g4113"
-     transform="translate(47.548292,104.60624)">
+     transform="translate(65.378901,86.775631)">
     <path
        transform="matrix(-0.01223684,-0.81070695,1.056089,-0.01044455,275.00007,536.42666)"
        inkscape:transform-center-y="-44.181483"
@@ -108,7 +108,7 @@
   </g>
   <g
      id="g4113-9"
-     transform="translate(-357.32784,36.203722)">
+     transform="translate(-160.00243,15.995698)">
     <path
        transform="matrix(-0.01223684,-0.81070695,1.056089,-0.01044455,275.00007,536.42666)"
        inkscape:transform-center-y="-44.181483"

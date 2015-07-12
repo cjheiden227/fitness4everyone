@@ -30,13 +30,13 @@
 
 %background{
   @include vendor-prefix(background-size, cover);
+  background-repeat: no-repeat;
+  background-position: center center;
   height: 100%;
-  width: 100%;
-
-  
+  width: 100%;  
 }
 
 %block{
-    margin: 2rem 0 2rem 0;
+    margin: 4rem 0 4rem 0;
 }
 

@@ -11,13 +11,6 @@
 	@extend %block;
 }
 
-.jumbo{
-	
-	background-repeat: no-repeat;
-	background-attachment: scroll, scroll, fixed;
-	background-position: center center;
-}
-
 .fade-in{
 	animation: fade-in .6s linear 1;
 }
@@ -121,13 +114,8 @@ html, body{
 		display: block;
         height: 100%;
         width: 100%; 
-        min-width: 100%;
-        min-height: 100%;
 	}
-	
 }
-
-
 
 #curveDownColor{
 	fill: lighten($primary-blue, 10%);
@@ -136,13 +124,16 @@ html, body{
 #curveColorTop{
 	fill: darken(rgba(0,111,187,1), 18.5%);
 }
-#footer{
-	background-color: #001829;
-	margin-top: -2rem;
+
+#footer.background{
 	background-image: image-url('footerlogo.png');
-	background-repeat: no-repeat;
-	background-position: center center; 
 	background-size: contain;
+	background-color: #001829;
+}
+
+#footer{
+	
+	margin-top: -2rem;
 
 	@media #{$small-phablet}  {
 		height: 100%;
@@ -171,16 +162,17 @@ html, body{
 			border:none;
 		}
 	}
+
 	p{
 		padding: 0 1rem 0 1rem;
 		@media #{$medium-up}{
 			padding: 0 2rem 0 2rem;
 		}
 	}
+
 	#footerNav{
 		padding: 1.5rem 0 .75rem 0;
 		margin: 0 auto;
-	
 		font-family: $font-family-custom-serif;
 		
 		li{
@@ -193,9 +185,11 @@ html, body{
 				padding-left: 0;
 				padding-top: .25rem;
 			}	
+
 			a{
 				color: $white;
 			}
+
 			a.active, a:hover{
 				color: lighten($primary-blue, 20%);
 			}
@@ -215,7 +209,5 @@ html, body{
 	
 			}
 		}
-
 	}
-
 }

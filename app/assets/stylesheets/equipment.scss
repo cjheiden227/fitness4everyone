@@ -7,7 +7,7 @@
 	fill: #005895;
 }
 
-.jumbo.background{
+.background{
 	background-image: linear-gradient(to bottom, rgba(0,142,238,0.45) 0%, rgba(0,88,149,1) 100%), image-url('equipment-bg.jpg');
 
 }
@@ -18,10 +18,8 @@
 	#top_content{
 	
 		position: relative;
-
-			top: 10%;
+		top: 10%;
 	
-
 		.first{
 			float: right;
 		}
@@ -106,10 +104,10 @@
 		}
 		@media #{$super-small-only}{
 			height: rem-calc(200);
-			margin: 3rem 0 3rem 0;
+			margin: 2rem 0 2rem 0;
 		}
 		@media #{$small-only}{
-			margin: 3rem 0 3rem 0;
+			margin: 2rem 0 2rem 0;
 			height: rem-calc(200);
 		}
 	}

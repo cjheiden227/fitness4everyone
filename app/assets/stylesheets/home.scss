@@ -2,28 +2,19 @@
 @import "variables";
 @import "foundation/functions";
 
-#jumbo.jumbo.background{
-	background-image: linear-gradient(to bottom, rgba(0,96,161,0.25) 0%, rgba(0,96,161,1) 100%), image-url('overlay.svg'), image-url('island.jpg');
-	background-size: cover;
-	background-attachment: scroll, scroll, fixed;
+#home_jumbo.background{
+	background-image: linear-gradient(to bottom, rgba(0,96,161,0.25) 0%, rgba(0,96,161,1) 100%),  image-url('bg-test.jpg');
+	background-attachment: scroll, fixed;
 }
 
-#jumbo, #jumbotron{
+#home_jumbo, #jumbotron{
 	position: relative;
 }
 
-#jumbo{
-	height: 110%;
+#home_jumbo{
+	
 	#jumbotron{
-
 		top: 10%;
-		.circle{
-			@include circle-icon(50);
-			background: none;
-			border: solid 1px $bg-grey;
-			box-shadow: none;
-		}
-		
 	}
 
 	.bannertext{
@@ -34,12 +25,14 @@
 		position: absolute;
 		left: 50%;
 		transform: translate(-50%, 0%);
-		bottom: 100px;
-
-		
+		bottom: 50px;
+		max-width: 400px;
+		width: 250px;
+		@media #{$medium-up}{
+			width: 400px;
+			bottom: 25px;
+		}
 	}
-
-	
 }
 
 #subsection, #testimonials{
@@ -48,7 +41,7 @@
 
 
 #subsection{
-	
+
 	background-image:   linear-gradient(to bottom, rgba(0,96,161,1) 0%, rgba(12,106,173,0.75) 25%, rgba(24,115,185,0.35) 50%, rgba(12,106,173,0.75) 75%, rgba(0,96,161,1) 100%), image-url('fitness4everyone.jpg');
 	background-attachment: scroll, fixed;
 	background-position: center center;
@@ -104,12 +97,8 @@
 #testimonials{
 	background-image: image-url('Underglow.svg');
 	background-position: bottom;
-
 	background-size: cover;
-
-	
 	background-repeat: no-repeat;
-	// background-color: lighten($primary-blue, 10%);
 	padding-bottom: 10rem;
 
 	p{
@@ -137,6 +126,21 @@
 		}
 	
   	}
+
+  	.circle{
+		@include circle-icon(400);
+	
+		margin: 0;
+		@media #{$medium-only} {
+			@include circle-icon(300);
+		}
+	  	@media #{$small-only} {
+			@include circle-icon(250);
+		}
+		@media #{$super-small-only} {
+			@include circle-icon(250);
+		}
+	}
   	p.author{
   		font-size: 1.25rem;
   		@media #{$medium-up}{
@@ -152,20 +156,7 @@
 	
 	}
 	
-  	.circle{
-		@include circle-icon(400);
-	
-		margin: 0;
-		@media #{$medium-only} {
-			@include circle-icon(300);
-		}
-	  	@media #{$small-only} {
-			@include circle-icon(250);
-		}
-		@media #{$super-small-only} {
-			@include circle-icon(250);
-		}
-	}
+  
 }
 
 
