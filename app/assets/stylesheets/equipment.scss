@@ -7,16 +7,13 @@
 	fill: #005895;
 }
 
-.background{
+#equipment-header.background{
 	background-image: linear-gradient(to bottom, rgba(0,142,238,0.45) 0%, rgba(0,88,149,1) 100%), image-url('equipment-bg.jpg');
 
 }
 
 #equipment-header{
-	height: 100%;
-
 	#top_content{
-	
 		position: relative;
 		top: 10%;
 	
@@ -57,21 +54,16 @@
 	}
 }
 .eqip-bg{
-	
-	background-image: image-url('Underglow.svg');
-	background-size: contain;
-	background-repeat: no-repeat;
+
+	@include background(image-url('Underglow.svg'), contain);
 	padding: 3rem;
 }
+
 #equipment{
 
 	height: auto;	
-
 	@media #{$medium-up}{
-		background-image: image-url('hawaii1.svg');
-		background-size: contain;
-		background-position: center center;
-		background-repeat: no-repeat;
+		@include background(image-url('hawaii1.svg'),contain, center center);
 		margin: 3rem 0 3rem 0;
 		
 	}
@@ -116,19 +108,6 @@
 		@media #{$medium-up}{
 			padding: 1rem 1rem;
 		}
-		
-	
-	}
-
-	.border{
-		@media #{$super-small-only}{
-			border: none;
-			@include vendor-prefix(box-shadow, none);
-		}
-		@media #{$small-only}{
-			border: none;
-			@include vendor-prefix(box-shadow, none);
-		}
 	}
 
 	.circle{
@@ -148,28 +127,25 @@
 }
 
 #brands #curveUpColor{
-		background-color: #007ed4;
-		fill: $primary-blue;
+	background-color: #007ed4;
+	fill: $primary-blue;
 
 }
 
-#brands{
+#brands.background{
 	background-image: image-url('circle-bg.svg'), image-url('Underglow2.svg');
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
+}
+
+#brands{
 	height: auto;
-	
 	.content{
 		padding: 8rem 0 8rem 0;
 		.promo{
 			font-size: 1.25rem;
 		}
-
 	}
 
 	.logo-block{
-	
 		padding: 4rem 0 4rem 0;
 		ul:nth-of-type(2){
 			padding: 2rem 0 2rem 0;
@@ -177,7 +153,12 @@
 	}
 
 	.circle{
+		display: block;
 		border: 5px solid $bg-grey;
+		background-size: auto auto;
+		background-color: lighten($primary-blue, 55%);
+		transition: all .3s ease-out;
+
 		@include circle-icon(200);
 		@media #{$super-small-only}{
 			@include circle-icon(75);
@@ -185,57 +166,26 @@
 		@media #{$small-only}{
 			@include circle-icon(100);
 		}
-		background-size: auto auto;
-		background-color: lighten($primary-blue, 55%);
-		transition: all .3s ease-out;
+	
 		&:hover{
 			transform: scale(1.10, 1.10);
 			border: none;
 		}
+
+		.vertical-center{
+			top: 50%;
+ 			left: 50%;
+ 			transform: translate(-50%, -50%);
+		}
+
 		img{
-			min-height: 0;
-			min-width: 0;
+			height: auto;
 			width: 75%;
-			margin: 0 auto;
 		}
 	}
 
 	.company{
 		font-family: $testimonial-font;
-	}
-	
-
-	
+	}	
 }
 
-#equip-contact{
-	background-image: image-url('triangles.svg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100%;
-
-	#curveDownColor{
-		background-color: lighten($primary-blue, 10%);
-		fill: #0060A1;
-	
-	}
-	.content{
-		@media #{$medium-up} {
-			margin-top: 5%;
-		}
-		
-	}
-	.circle{
-		@include circle-icon(300);
-		@media #{$super-small-only}{
-			@include circle-icon(200);
-		}
-		@media #{$small-only}{
-			@include circle-icon(200);
-		}
-	}
-	.vertical-parent{
-		height: 300px;
-	}
-}

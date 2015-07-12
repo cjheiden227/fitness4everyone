@@ -125,6 +125,37 @@ html, body{
 	fill: darken(rgba(0,111,187,1), 18.5%);
 }
 
+#contact_link.background{
+	background-image: image-url('triangles.svg');
+	
+}
+#contact_link{
+
+	#curveDownColor{
+		background-color: lighten($primary-blue, 10%);
+		fill: #0060A1;
+	
+	}
+	.content{
+		@media #{$medium-up} {
+			margin-top: 5%;
+		}
+		
+	}
+	.circle{
+		@include circle-icon(300);
+		@media #{$super-small-only}{
+			@include circle-icon(200);
+		}
+		@media #{$small-only}{
+			@include circle-icon(200);
+		}
+	}
+	.vertical-parent{
+		height: 300px;
+	}
+}
+
 #footer.background{
 	background-image: image-url('footerlogo.png');
 	background-size: contain;

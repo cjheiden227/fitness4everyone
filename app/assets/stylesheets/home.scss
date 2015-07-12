@@ -12,7 +12,6 @@
 }
 
 #home_jumbo{
-	
 	#jumbotron{
 		top: 10%;
 	}
@@ -39,15 +38,13 @@
 	height: auto;
 }
 
-
-#subsection{
-
+#subsection.background{
 	background-image:   linear-gradient(to bottom, rgba(0,96,161,1) 0%, rgba(12,106,173,0.75) 25%, rgba(24,115,185,0.35) 50%, rgba(12,106,173,0.75) 75%, rgba(0,96,161,1) 100%), image-url('fitness4everyone.jpg');
 	background-attachment: scroll, fixed;
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
 
+}
+
+#subsection{
 	.subheading-row{
 		position: relative;
 	}
@@ -95,10 +92,7 @@
 }
 
 #testimonials{
-	background-image: image-url('Underglow.svg');
-	background-position: bottom;
-	background-size: cover;
-	background-repeat: no-repeat;
+	@include background(image-url('Underglow.svg'), bottom);
 	padding-bottom: 10rem;
 
 	p{
@@ -154,9 +148,7 @@
 	.testimonial-row>.row, .vertical-parent{
 		height: 100%;
 	
-	}
-	
-  
+	} 
 }
 
 
