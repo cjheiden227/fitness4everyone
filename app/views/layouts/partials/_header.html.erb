@@ -9,10 +9,30 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul id="top-overlay" class="right">
-      <li class=<%=is_active?(root_path)%> ><%=link_to("Home", root_path)%></li>
-      <li class=<%=is_active?(equipment_path)%>><%=link_to("Equipment", equipment_path)%></li>
-      <li class=<%=is_active?(trainer_path)%>><%=link_to("Personal Training", trainer_path)%></li>
-      <li class=<%=is_active?(contacts_path)%>><%=link_to("Contact", contacts_path)%></li>
+      <li class=<%=is_active?(root_path)%> >
+        <%=link_to(root_path) do %>
+          <i class='fa fa-home'></i>
+          Home
+        <%end%>
+      </li>
+       <li class=<%=is_active?(equipment_path)%> >
+        <%=link_to(equipment_path) do %>
+          <i class="fa fa-bicycle"></i>
+          Equipment
+        <%end%>
+      </li>
+       <li class=<%=is_active?(trainer_path)%> >
+        <%=link_to(trainer_path) do %>
+          <i class="fa fa-user"></i>
+          Personal Training
+        <%end%>
+      </li>
+       <li class=<%=is_active?(contact_path)%> >
+        <%=link_to(contact_path) do %>
+          <i class="fa fa-envelope"></i>
+          Contact
+        <%end%>
+      </li>
     </ul>
   </section>
 </nav>

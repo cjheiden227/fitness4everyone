@@ -1,37 +1,41 @@
 <section class="text-shadow background" id="contact">
+
+<!-- TODO: make reveal modal to house progress bar -->
 	<div class="row">
-		<div class="small-12 medium-centered medium-10 columns">
-			<h1 class="text-center">Get in Touch, <br> Schedule a Consultation,<br> Get an Appointment! </h1>
+		<div class="text-center small-centered small-12 medium-10 columns">
+			<h2>Get in Touch, Schedule a Consultation, <br> Get an Appointment! </h2>
+		<%=image_tag('email.svg', id: 'email') %>
 		</div>
 	</div>
-	<form>
-	  <div class="row">
-	    <div class="small-12 medium-centered medium-10 columns">
-	      <label>Name
-	        <input type="text" placeholder="large-12.columns" />
-	      </label>
-	    </div>
-	  </div>
-	  <div class="row">
-	    <div class="small-12 medium-offset-1 medium-5 columns">
-	      <label>Phone Number
-	        <input type="text" placeholder="large-4.columns" />
-	      </label>
-	    </div>
-	    <div class="small-12 medium-5 end columns">
-	      <label>Email
-	        <input type="text" placeholder="large-4.columns" />
-	      </label>
-	    </div>
 
-	  </div>
-	  
-	  <div class="row">
-	    <div class="small-12 medium-10 small-centered columns">
-	      <label>Message
-	        <textarea placeholder="small-12.columns"></textarea>
-	      </label>
-	    </div>
-	  </div>
-	</form>
+	<%= form_for @contact, url: contacts_path, remote: true, format: :json do |f| %>
+		<div class="row">
+	    	<div class="small-12 medium-centered medium-8 columns">
+				<%= f.label :name %>
+			   	<%= f.text_field :name, placeholder: "Enter your name" %>  
+	   	 	</div>
+	  	</div>
+		<div class="row">
+	    	<div class="small-12 medium-offset-2 medium-4 columns">
+			   	<%= f.label :email %>
+			  	<%= f.text_field :email, placeholder: "Enter your email" %>
+			</div>
+	  		<div class="small-12 medium-4 end columns">
+			  	<%= f.label :phone %>  
+				<%= f.text_field :phone, placeholder: "Enter your phone number"%>
+
+			</div>
+	  	</div>
+		<div class="row">
+	   		<div class="small-12 medium-8 small-centered columns">
+				<%= f.label :message%>
+				<%= f.text_area :message, placeholder: "Enter a brief message"%>
+			</div>
+		</div>
+		<div class="row">
+			<div class="text-center small-12 medium-8 small-centered columns">
+				<%=f.submit 'Send Message', id:'submit', class: " success button radius large"  %>
+			</div>
+		</div>
+	<% end %>
 </section>

@@ -12,7 +12,7 @@
    id="svg3071"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="Underglow.svg">
+   sodipodi:docname="Underglow3.svg">
   <metadata
      id="metadata3086">
     <rdf:RDF>
@@ -21,6 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,7 +42,7 @@
      showgrid="false"
      inkscape:zoom="0.63951367"
      inkscape:cx="135.93032"
-     inkscape:cy="526.18109"
+     inkscape:cy="463.63356"
      inkscape:window-x="0"
      inkscape:window-y="30"
      inkscape:window-maximized="1"
@@ -49,27 +50,34 @@
   <radialGradient
      id="glow"
      gradientUnits="userSpaceOnUse"
-     cx="683"
-     cy="650"
-     r="650">
+     cx="88.391762"
+     cy="-55.907364"
+     r="650"
+     fx="88.391762"
+     fy="-55.907364"
+     gradientTransform="matrix(0.38177923,-0.01051333,0.00957466,0.34769272,177.55531,260.68155)">
     <stop
-       offset="0%"
+       offset="0"
        stop-color="#24a4ff"
-       id="stop3074" />
+       id="stop3074"
+       style="stop-color:#ffffff;stop-opacity:0.39215687;" />
     <stop
-       offset="76%"
+       style="stop-color:#ffffff;stop-opacity:0.19607843;"
+       id="stop3875"
+       stop-color="#24a4ff"
+       offset="0.3414599" />
+    <stop
+       offset="1"
        stop-color="#0095ff"
-       id="stop3076" />
-    <stop
-       offset="100%"
-       stop-color="#007ed4"
-       id="stop3078" />
+       id="stop3076"
+       style="stop-color:#ffffff;stop-opacity:0;" />
   </radialGradient>
   <rect
-     fill="url(#glow)"
      x="-1%"
      y="-1%"
      width="102%"
      height="102%"
-     id="rect3080" />
+     id="rect3080"
+     fill="url(#glow)"
+     style="fill:url(#glow)" />
 </svg>

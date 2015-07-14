@@ -2,6 +2,15 @@
 @import "variables";
 @import "foundation/functions";
 
+#contact.background{
+	background-image: image-url('Underglow3.svg');
+	background-color: lighten($primary-blue, 10%);
+}
+
 #contact{
-	background-color: $primary-blue;
+	padding-top: 5%;
+	#email{
+		width: 300px;
+		height: auto;
+	}
 }

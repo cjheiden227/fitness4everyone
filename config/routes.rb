@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  resources :contacts, only: [:index, :create], :path=>"contact"
+  resources :contacts, only: [:index, :create], :defaults => { :format => :json }
+  match '/contact' => 'contacts#index', as: :contact, via: :get
   match '/equipment' => 'equipment#index', as: :equipment, via: :get
   match '/personal_training' => 'trainer#index', as: :trainer, via: :get
   # The priority is based upon order of creation: first created -> highest priority.

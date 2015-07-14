@@ -1,20 +1,17 @@
 class Contact 
-	include ActiveAttr::Model
-	include ActiveModel::Validations
+	# include ActiveAttr::Model
+	# include ActiveModel::Validations
+    include ActiveModel::Model
 
-
-    attribute :name
-    attribute :email
-    attribute :phone
-    attribute :message
+    attr_accessor :name, :email, :phone, :message
 
     VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
 
     #Validations
-    validates_presence_of :name
-    validates_presence_of :email 
+    validates :name, presence: true 
+    validates :email, presence: true 
     validates :email, format: { with: VALID_EMAIL_REGEX}
-    validates_presence_of :phone
+    validates :phone, presence: true
 
     validates_length_of :message, maximum: 500
 
