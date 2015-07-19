@@ -11,7 +11,7 @@ class Contact
     validates :name, presence: true 
     validates :email, presence: true 
     validates :email, format: { with: VALID_EMAIL_REGEX}
-    validates :phone, presence: true
+  
 
     validates_length_of :message, maximum: 500
 

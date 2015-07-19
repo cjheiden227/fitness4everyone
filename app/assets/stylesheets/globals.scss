@@ -38,6 +38,18 @@ html, body{
 	color: $white;
 }
 
+#contact-modal{
+	color: darken($primary-blue, 10%) !important;
+}
+
+.fail{
+	color: $alert-color;
+}
+
+.sent{
+	color: $success-color
+}
+
 #navbar{
 	z-index: 9999;
 }
