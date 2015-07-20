@@ -10,8 +10,9 @@ class Contact
     #Validations
     validates :name, presence: true 
     validates :email, presence: true 
-    validates :email, format: { with: VALID_EMAIL_REGEX}
-  
+    validates :email, email_format: true
+    validates :phone, presence: true
+    validates :message, presence: true
 
     validates_length_of :message, maximum: 500
 

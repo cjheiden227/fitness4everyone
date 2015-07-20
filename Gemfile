@@ -26,7 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'foundation-rails'
 gem 'mandrill-api', '~> 1.0.53', require: 'mandrill'
 
-gem "jquery-validation-rails"
+gem 'client_side_validations', github: 'DavyJonesLocker/client_side_validations'
 gem "font-awesome-rails"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

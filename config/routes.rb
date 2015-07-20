@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  # mount Judge::Engine => '/judge'
   resources :contacts, only: [:index, :create], :defaults => { :format => :json }
   match '/contact' => 'contacts#index', as: :contact, via: :get
   match '/equipment' => 'equipment#index', as: :equipment, via: :get

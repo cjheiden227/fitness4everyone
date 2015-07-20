@@ -10,39 +10,39 @@
 		</div>
 	</div>
 
-	<%= form_for @contact, url: contacts_path, remote: true, format: :json  do |f| %>
+	<%= form_for @contact, url: contacts_path, remote: true, format: :json, validate: true do |f| %>
 
 		<div class="row">
 	    	<div class="small-12 medium-centered medium-8 columns">
-				<%= f.label :name do %>
+				<%= f.label :name, class: "input-label" do %>
 					Name
 				<%end%> 
 
-			   	<%= f.text_field :name, class: 'input', placeholder: "Enter your name"%>
+			   	<%= f.text_field :name,  :validate => true, class: 'input', placeholder: "Enter your name"%>
 		
 		 	</div>
 		</div>	
 		<div class="row">
 	    	<div class="small-12 medium-offset-2 medium-4 columns">
-			   	<%= f.label :email do %>
+			   	<%= f.label :email, class: "input-label"  do %>
 					Email 
 				<%end%> 
-				<%= f.text_field :email, class: 'input', placeholder: "yourname@email.com"%>
+				<%= f.text_field :email, :validate => true, class: 'input', placeholder: "yourname@email.com"%>
 				
 			</div>
 	  		<div class="small-12 medium-4 end columns">
-			  	<%= f.label :phone do %>
+			  	<%= f.label :phone, class: "input-label" do %>
 					Phone Number
 				<%end%>   
-				<%= f.text_field :phone, class: 'input', placeholder: "Please enter your phone number"%>
+				<%= f.text_field :phone, :validate => true, class: 'input', placeholder: "Please enter your phone number"%>
 			</div>
 	  	</div>
 		<div class="row">
 	   		<div class="small-12 medium-8 small-centered columns">
-				<%= f.label :message do %>
+				<%= f.label :message, class: "input-label"  do %>
 					Message 
 				<%end%> 
-				<%= f.text_field :message, class: 'input', placeholder: "Enter a message"%>
+				<%= f.text_field :message, :validate => true, class: 'input', placeholder: "Enter a message"%>
 			
 			</div>
 		</div>

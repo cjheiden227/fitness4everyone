@@ -14,8 +14,8 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
-//= require jquery.validate
-//= require jquery.validate.additional-methods
+//= require rails.validations
+//= require rails.validations.customValidators
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
