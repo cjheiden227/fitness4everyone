@@ -43,8 +43,12 @@ html, body{
 }
 
 
-.sent{
+.sent {
 	color: $success-color !important;
+}
+
+.fail {
+	color: $alert-color !important;
 }
 
 #navbar{

@@ -19,4 +19,4 @@ window.ClientSideValidations.formBuilders['ActionView::Helpers::FormBuilder'] = 
   $('#contact-modal').foundation('reveal', 'open');
   $('.progress').removeClass('success alert');
  }
-       
+

@@ -12,6 +12,7 @@ class ContactsController < ApplicationController
       if @contact.valid?
         puts @contact.valid?
         send_notifications(@contact)
+
         format.html { redirect_to root_path, notice: 'Contact was successfully created.' }
         format.json { render json: @contact, status: :created}
       else

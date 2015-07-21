@@ -56,15 +56,16 @@
 
 
 	<div id="contact-modal" class="small reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-		<div class="text-center">
-		  <p id="modalTitle" class="lead">Sending Your Mesage...</p>
-		
-		  <p><i class="fa fa-check-circle fa-5x sent"></i></p>
-		  <p><i class="fa fa-exclamation-triangle fa-5x  fail"></i></p>
+		<div class="modal-area text-center">
+		    <p id="modalTitle" class="lead">Sending Your Mesage...</p>
+		 	<div class="spinner">
+  				<div class="double-bounce1"></div>
+  				<div class="double-bounce2"></div>
+			</div>
+		  	<p class='icon sent'><i class="fa fa-check-circle fa-5x "></i></p>
+		  	<p class='icon fail'><i class="fa fa-exclamation-triangle fa-5x "></i></p>
 	  	</div>
-	  	<div class="round progress">
- 			<span style="width: 0%" class="meter"></span>
-		</div>
+
 	  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 	</div>
 </section>
