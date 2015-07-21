@@ -16,11 +16,19 @@
 	
 	.field_with_errors{
 		display: inline;
-		.message{
-			color: red;
-		}
+
 	}
-	.field_with_errors>input{
-		border: 1px solid red;
+	#submit{
+		margin-top: 10px;
+	}
+	.message{
+			background-color: $alert-color !important;
+	}
+	.field_with_errors{
+		border: 1px solid $alert-color;
+	}
+
+	#contact_message{
+		height: 100px;
 	}
 }

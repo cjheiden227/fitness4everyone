@@ -39,15 +39,12 @@ html, body{
 }
 
 #contact-modal{
-	color: darken($primary-blue, 10%) !important;
+	color: darken($primary-blue, 10%);
 }
 
-.fail{
-	color: $alert-color;
-}
 
 .sent{
-	color: $success-color
+	color: $success-color !important;
 }
 
 #navbar{

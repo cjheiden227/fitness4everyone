@@ -1,5 +1,6 @@
 <% provide(:title, 'Contact') %>
 
+
 <section class="text-shadow background" id="contact">
 
 <!-- TODO: make reveal modal to house progress bar -->
@@ -42,7 +43,7 @@
 				<%= f.label :message, class: "input-label"  do %>
 					Message 
 				<%end%> 
-				<%= f.text_field :message, :validate => true, class: 'input', placeholder: "Enter a message"%>
+				<%= f.text_area :message, :validate => true, class: 'input', placeholder: "Enter a message"%>
 			
 			</div>
 		</div>
@@ -58,8 +59,8 @@
 		<div class="text-center">
 		  <p id="modalTitle" class="lead">Sending Your Mesage...</p>
 		
-		  <i class="fa fa-check-circle fa-5x sent"></i>
-		  <i class="fa fa-exclamation-triangle fa-5x  fail"></i>
+		  <p><i class="fa fa-check-circle fa-5x sent"></i></p>
+		  <p><i class="fa fa-exclamation-triangle fa-5x  fail"></i></p>
 	  	</div>
 	  	<div class="round progress">
  			<span style="width: 0%" class="meter"></span>
@@ -67,3 +68,4 @@
 	  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 	</div>
 </section>
+<%= javascript_include_tag "validation" %>
