@@ -7,7 +7,6 @@ $(document).ready ->
     $('.icon').hide()
     $('.spinner').show()
     $('.lead').text('Sending Message...')
-
     $('.modal-area').removeClass('sent fail')
   $(document).bind "ajaxSuccess", "form.new_contact", (event, xhr, settings) ->
     $('.spinner').hide()
@@ -16,7 +15,6 @@ $(document).ready ->
     $('.lead').text('Message Sent!')
     $('form.new_contact').trigger('reset').resetClientSideValidations()
  
-    
   $(document).bind "ajaxError", "form.new_contact", (event, jqxhr, settings, exception) ->
     $('.spinner').hide()
     $('.fail').show()
