@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -69,13 +69,13 @@
      id="namedview6473"
      showgrid="true"
      inkscape:zoom="1.5743131"
-     inkscape:cx="292.71803"
-     inkscape:cy="385.10012"
+     inkscape:cx="139.63539"
+     inkscape:cy="308.8764"
      inkscape:window-x="0"
      inkscape:window-y="30"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2"
-     showguides="false"
+     inkscape:current-layer="layer1"
+     showguides="true"
      inkscape:guide-bbox="true">
     <sodipodi:guide
        orientation="1,0"
@@ -97,6 +97,14 @@
        orientation="0,1"
        position="22.231917,276.94616"
        id="guide8595" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-188.01851,350.62911"
+       id="guide3014" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-234.38794,299.8133"
+       id="guide3016" />
   </sodipodi:namedview>
   <g
      inkscape:groupmode="layer"
@@ -129,6 +137,20 @@
        sodipodi:ry="91.46846"
        d="m 201.35765,104.0164 c 0,50.51664 -41.37841,91.46846 -92.42126,91.46846 -51.042847,0 -92.421253,-40.95182 -92.421253,-91.46846 0,-50.516632 41.378406,-91.468457 92.421253,-91.468457 51.04285,0 92.42126,40.951825 92.42126,91.468457 z"
        transform="translate(41.063606,-219.04794)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
+       id="rect7408"
+       width="142.28427"
+       height="9.5279646"
+       x="78.857864"
+       y="-91.847672" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
+       id="rect7408-6"
+       width="142.28427"
+       height="9.5279646"
+       x="78.857864"
+       y="-147.16116" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -139,17 +161,17 @@
     <text
        xml:space="preserve"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Sans"
-       x="143.577"
-       y="-99.263542"
+       x="97.207565"
+       y="-107.17801"
        id="text10050"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="143.577"
-         y="-99.263542"
-         id="tspan10052"><tspan
-           x="143.577"
-           y="-99.263542"
-           style="font-size:48px;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Kaushan Script;-inkscape-font-specification:Kaushan Script"
-           id="tspan10054">F4E</tspan></tspan></text>
+         x="97.207565"
+         y="-107.17801"
+         id="tspan10052">10+ Years</tspan><tspan
+         sodipodi:role="line"
+         x="97.207565"
+         y="-77.178009"
+         id="tspan3161" /></text>
   </g>
 </svg>

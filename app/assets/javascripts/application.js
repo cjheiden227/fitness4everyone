@@ -15,7 +15,7 @@
 //= require foundation
 //= require turbolinks
 //= require home_page
-//= require contacts
+
 
 
 $(function(){ $(document).foundation(); });

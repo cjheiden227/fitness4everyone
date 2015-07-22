@@ -5,6 +5,7 @@
 #contact.background{
 	background-image: image-url('Underglow3.svg');
 	background-color: lighten($primary-blue, 10%);
+  height: auto;
 }
 
 #contact{
@@ -31,6 +32,9 @@
 	#contact_message{
 		height: 100px;
 	}
+  .submit{
+    margin-bottom: 50px;
+  }
 }
 
 .spinner {

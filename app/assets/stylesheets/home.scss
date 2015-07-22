@@ -14,6 +14,9 @@
 #home_jumbo{
 	#jumbotron{
 		top: 10%;
+		.border{
+			background: rgba(0,0,0,0.1);
+		}
 	}
 
 	.bannertext{
@@ -29,7 +32,7 @@
 		width: 250px;
 		@media #{$medium-up}{
 			width: 400px;
-			bottom: 25px;
+			bottom: 40px;
 		}
 	}
 }
@@ -142,8 +145,8 @@
 }
 
 #testimonials{
-	@include background(image-url('Underglow.svg'), bottom);
-	padding-bottom: 10rem;
+	@include background(image-url('Underglow.svg'), cover, bottom);
+	padding-bottom: 4rem;
 
 	p{
 		font-family: $testimonial-font;
@@ -199,6 +202,36 @@
 		height: 100%;
 	
 	} 
+
+
+	.talkbubble {
+	 	padding: 1rem;
+	   	background: rgba(0, 96, 161, 0.5);
+	   	position: relative;
+	   	-moz-border-radius:    10px;
+	   	-webkit-border-radius: 10px;
+	   	border-radius:         10px;
+	}
+	.talkbubble:before{
+		content:"";
+	  	position: absolute;
+	  	top: 30%;
+	   	width: 0;
+	   	height: 0;
+	}
+	.talkbubble.left:before{
+	
+		left: 100%;
+		border-top: 13px solid transparent;
+	   	border-left: 26px solid rgba(0, 96, 161, 0.5);
+	   	border-bottom: 13px solid transparent;
+	}
+	.talkbubble.right:before {
+	   	right: 100%;
+	   	border-top: 13px solid transparent;
+	   	border-right: 26px solid rgba(0, 96, 161, 0.5);
+	   	border-bottom: 13px solid transparent;
+	}
 }
 
 
