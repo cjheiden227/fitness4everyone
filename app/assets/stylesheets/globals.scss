@@ -107,9 +107,20 @@ html, body{
 	text-shadow: 1px 1px #000000;
 }
 
-.whiteStroke {
-    stroke: rgba(253, 253, 253, .05);
-    stroke-width: 2;     
+.jumbo-content{
+	margin-top: 10%;
+}
+
+.content-block-5{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+		
+}
+
+.content-block-2{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+		
 }
 
 .vertical-parent{
@@ -130,6 +141,27 @@ html, body{
         width: 100%; 
 	}
 }
+.halfcircle{
+	position: relative;
+}
+
+.halfcircle:after {
+	position: absolute;
+	content:'';
+	left: 50%;
+	z-index: 10;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: rgba(0,96,161,1);
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+
+.halfcircle:after {
+	bottom: -50px;
+}
 
 #curveDownColor{
 	fill: lighten($primary-blue, 10%);
@@ -141,31 +173,22 @@ html, body{
 
 #contact_link.background{
 	background-image: image-url('triangles.svg');
-	height: auto;
+	min-height: 50%;
 
 }
+
 #contact_link.home{
 	background-color: darken($primary-blue, 10%);
-	padding:0 0 8rem 0;
+	padding:0 0 2rem 0;
 	#uptriangle{
 		background-color: lighten($primary-blue, 10%);
 		fill: darken($primary-blue, 10%);
 	}
 }
+
 #contact_link{
-	padding: 0 0 8rem 0;
-	
-	#curveDownColor{
-		background-color: lighten($primary-blue, 10%);
-		fill: #0060A1;
-	
-	}
-	.content{
-		@media #{$medium-up} {
-			margin-top: 5%;
-		}
-		
-	}
+	padding: 0 0 2rem 0;
+
 	.circle{
 		@include circle-icon(300);
 		@media #{$super-small-only}{
@@ -184,29 +207,15 @@ html, body{
 	background-image: image-url('footerlogo.png');
 	background-size: contain;
 	background-color: #001829;
+	min-height: 50%;
+	height: auto;
 
 }
 
 #footer{
-	
-	margin-top: -2rem;
-
-	// @media #{$small-phablet}  {
-	// 	height: 100%;
-	// }	
-	// @media #{$super-small-phablet} {
-	// 	height: 100%;
-	// }
-	// @media #{$small-only}  {
-	// 	height: 100%;
-	// }	
-	// @media #{$super-small-phablet} {
-	// 	height: 100%;
-	// }
-	height: 85%;
-	@media #{$medium-up}{
-		height: 50%;
-	}	
+	.footer-content{
+		margin-top: 10%;
+	}
 	.row{
 		height: 100%;
 	}

@@ -5,6 +5,7 @@
 #home_jumbo.background{
 	background-image: linear-gradient(to bottom, rgba(0,96,161,0) 0%, rgba(0,96,161,1) 100%),  image-url('bg-test.jpg');
 	background-attachment: scroll, fixed;
+	height: 600px;
 }
 
 #home_jumbo, #jumbotron{
@@ -12,28 +13,28 @@
 }
 
 #home_jumbo{
-	#jumbotron{
-		top: 10%;
-		.border{
-			background: rgba(0,0,0,0.1);
-		}
-	}
 
+	.border{
+		background: rgba(0,0,0,0.1);
+	}
+	
 	.bannertext{
 		color: white !important;
 	}
 
-	.divider-logo{
-		position: absolute;
-		left: 50%;
-		transform: translate(-50%, 0%);
-		bottom: 50px;
+	&:after{
+		position: relative;
+		content: image-url('divider_logo.svg');
+		margin: 0 auto;
+		height: 400px;
 		max-width: 400px;
 		width: 250px;
+		bottom: -100px;
 		@media #{$medium-up}{
 			width: 400px;
-			bottom: 40px;
+			bottom: -200px;
 		}
+		
 	}
 }
 
@@ -42,8 +43,6 @@
 }
 
 #subsection.background{
-	// background-image: radial-gradient(ellipse at center, rgba(73,155,234,0.25) 0%, rgba(22,114,183,0.5) 49%, rgba(21,113,182,1) 50%, rgba(21,113,182,1) 50%, rgba(0,96,161,1) 70%), image-url('fitness4everyone.jpg');
-	// background-attachment: scroll, fixed;
 	background-color: $primary-blue;
 
 }
@@ -59,22 +58,18 @@
 	  	transform: translateY(-50%);	
   	}
 	
-	.content-block{
-		margin-top: 5rem;
-		margin-bottom: 5rem;
-		
-	}
+
 	.peri{
 		@media #{$medium-up}{
 			height: 640px;
 		}
 		@media #{$super-small-only}{
-			height: 300px;
-			width: 300px;
+			height: 250px;
+			width: 250px;
 		}
 		@media #{$small-only}{
-			height: 400px;
-			width: 400px;
+			height: 300px;
+			width: 300px;
 		}
 		max-height: 640px;
 		max-width: 640px;
@@ -87,7 +82,7 @@
 		margin: 0 auto;
 		background-repeat: no-repeat;
 	}
-	  .window-tint{
+	.window-tint{
 	  	h1{
 	  		@media #{$super-small-only}{
 	  			font-size: 1.8rem;
@@ -96,9 +91,11 @@
 	  			font-size: 2rem;
 	  		}
 	  	}
+
 	  	.button-group{
 	  		text-shadow: none;
 	  	}
+
 	    background-color: rgba(0, 24, 41,0.5);
 	    position: absolute;
 	    top: 0;
@@ -125,6 +122,7 @@
 			font-size: .85rem;
 		}
 	}
+
    	.circle{
 		@include circle-icon(250);
 	  	@media #{$small-only} {
@@ -174,9 +172,6 @@
 
   	.circle{
 		@include circle-icon(300);
-	
-		margin: 0;
-	
 	  	@media #{$small-only} {
 			@include circle-icon(250);
 		}
@@ -194,11 +189,23 @@
 	.testimonial-even{
 		padding-right: 2rem;
 	}
+	.vertical-parent{
+		@media #{$super-small-only}{
+			margin-top: rem-calc(30);
+		}
+
+		@media #{$small-only}{
+			margin-top: rem-calc(30);
+		}
+		
+		@media #{$medium-up}{
+			margin-top: 0;
+		}
+	}
 	.testimonial-row>.row, .vertical-parent{
 		height: 100%;
 	
 	} 
-
 
 	.talkbubble {
 	 	padding: 1rem;
@@ -238,12 +245,14 @@
 	.talkbubble.up:before {
 		@media #{$super-small-only}{
 	  		left: 50%;
+	  		margin-left:-13px;
 	   		border-left: 13px solid transparent;
 	   		border-bottom: 26px solid rgba(0, 96, 161, 0.5);
 	   		border-right: 13px solid transparent;
 	  	} 
 	  	@media #{$small-only}{
 	  		left: 50%;
+	  		margin-left:-13px;
 	   		border-left: 13px solid transparent;
 	   		border-bottom: 26px solid rgba(0, 96, 161, 0.5);
 	   		border-right: 13px solid transparent;

@@ -34,6 +34,8 @@ $portrait: "#{$screen} and (orientation: portrait)";
 $super-small-only: "#{$screen} and (max-width: #{upper-bound($super-small-range)})";
 $super-small-up: $screen;
 
+$squash: "#{$screen} and (orientation: landscape) and (max-height: 600px)";
+
 $super-small-phablet:"#{$screen} and (max-width: #{upper-bound($super-small-range)}) and (max-height:760px)";
 $small-phablet:"#{$screen} and (max-width: #{upper-bound($small-range)}) and (max-height:760px)";
 

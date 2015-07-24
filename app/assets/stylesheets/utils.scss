@@ -41,7 +41,8 @@
   @include vendor-prefix(background-size, cover);
   background-repeat: no-repeat;
   background-position: center center;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   width: 100%;  
 }
 
