@@ -134,10 +134,10 @@
 #testimonials .row{
 	margin-top: 2rem;
 	@media #{$small-only} {
-			margin-top: 1rem;
+		margin-top: 1rem;
 	}
 	@media #{$super-small-only} {
-			margin-top: 1rem;
+		margin-top: 1rem;
 	}
 
 }
@@ -181,9 +181,8 @@
 	}
   	p.author{
   		font-size: 1.25rem;
-  		// @media #{$medium-up}{
-			text-align: right;
-  		// }
+		text-align: right;
+  	
 	}
 	
 	.testimonial-even{

@@ -47,10 +47,6 @@
 			background-image: image-url('f4e.svg');
 			background-size: contain;
 		}
-		#icons{
-			margin-top: 2rem;
-			margin-bottom: 2rem;
-		}
 	}
 }
 .eqip-bg{
@@ -64,20 +60,18 @@
 	height: auto;	
 	@media #{$medium-up}{
 		@include background(image-url('hawaii1.svg'),contain, center center);
-		margin: 3rem 0 3rem 0;
-		
+			
 	}
 	@media #{$super-small-only}{
-		margin: 2rem 0 1rem 0;
+		
 		text-align: center;
 	}
 	@media #{$small-only}{
-		margin: 2rem 0 1rem 0;
+		
 		text-align: center;
 	}
 
 	.heading{
-		margin-bottom: 2rem;
 		height: 100%;
 	}
 
@@ -99,7 +93,7 @@
 			margin: 2rem 0 2rem 0;
 		}
 		@media #{$small-only}{
-			margin: 2rem 0 2rem 0;
+			margin: 3rem 0 3rem 0;
 			height: rem-calc(200);
 		}
 	}

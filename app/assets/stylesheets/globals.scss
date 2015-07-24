@@ -90,7 +90,6 @@ html, body{
 	font-family: $logo-font !important;
 }
 
-
 .logo, #logo{
 	color: $primary-blue;
 	@include vendor-prefix(transition, all 500ms ease-in-out);
@@ -124,13 +123,13 @@ html, body{
 }
 
 .vertical-parent{
-		position: relative;
+	position: relative;
 }
 
 .vertical-center{
-	  	position: absolute;
-	  	top: 50%;
-	   	transform: translateY(-50%);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 		
 }
 
