@@ -16,43 +16,15 @@
 	#top_content{
 		position: relative;
 		top: 10%;
-	
-		.first{
-			float: right;
-		}
-
-		.third{
-			float: left;
-		}
-		.circle{
-			@include circle-icon(100);
-			border: 5px solid $bg-grey;
-			
-			@media #{$small-only}{
-				@include circle-icon(75);
-				
-			}
-			@media #{$super-small-only}{
-				@include circle-icon(75);
-			
-			}
-			@media #{$screen} and (min-width: 500px) and (min-height:800px) and (max-width:860px){
-				@include circle-icon(75);
-			
-			}
-		}
-		.second{
-			border: none;
-			box-shadow: none;
-			background-image: image-url('f4e.svg');
-			background-size: contain;
-		}
 	}
 }
 .eqip-bg{
 
 	@include background(image-url('Underglow.svg'), contain);
-	padding: 3rem;
+	padding: 1rem;
+	@media #{$medium-up}{
+		padding: 3rem;
+	}
 }
 
 #equipment{
@@ -76,8 +48,16 @@
 	}
 
 	.big-box{
-		max-width: 800px;
+		max-width: 400px;
 		margin: 0 auto;
+	
+		@media #{$small-only}{
+			width: 100%;
+		}
+		@media #{$medium-up}{
+			max-width: 800px;
+			width: 100%;
+		}
 	}
 	
 	.img-wrapper{
@@ -100,38 +80,20 @@
 	}
 
 	.vertical-parent{
-		// height: rem-calc(350);
-		// @media #{$medium-only}{
-		// 	height: rem-calc(250);
-		// }
-		// @media #{$super-small-only}{
-		// 	height: rem-calc(200);
-		// 	margin: 2rem 0 2rem 0;
-		// }
-		// @media #{$small-only}{
-		// 	margin: 3rem 0 3rem 0;
-		// 	height: rem-calc(200);
-		// }
+		height: 100%;
+		display: table;
+
 	}
 
 	.vertical-center{
-		@media #{$super-small-only}{
-			position: static;
-			top: 0;
-			transform: none;
-		}
-		@media #{$small-only}{
-			position: static;
-			top: 0;
-			transform: none;
-		}
+		//height: 400px;
+		padding: 1.5rem;
+		display: table-cell;
+		vertical-align: middle;
+		position: static;
+		top: 0;
+		transform: none;
 	}
-}
-
-#brands #curveUpColor{
-	background-color: #007ed4;
-	fill: $primary-blue;
-
 }
 
 #brands.background{
@@ -139,7 +101,7 @@
 }
 
 #brands{
-	
+	background-color: #007ed4;
 	height: auto;
 	.content{
 		padding: 8rem 0 8rem 0;
@@ -158,8 +120,7 @@
 		border: 5px solid $bg-grey;
 		background-size: auto auto;
 		background-color: lighten($primary-blue, 55%);
-		transition: all .3s ease-out;
-
+		@include vendor-prefix(transition, all .3s ease-out);
 		@include circle-icon(200);
 		@media #{$super-small-only}{
 			@include circle-icon(75);
@@ -176,7 +137,7 @@
 		.vertical-center{
 			top: 50%;
  			left: 50%;
- 			transform: translate(-50%, -50%);
+ 			@include vendor-prefix(transform, translate(-50%, -50%));
 		}
 
 		img{
