@@ -14,8 +14,5 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
-//= require home_page
-
-
 
 $(function(){ $(document).foundation(); });

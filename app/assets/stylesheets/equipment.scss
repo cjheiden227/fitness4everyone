@@ -10,6 +10,7 @@
 #equipment-header.background{
 	background-image: linear-gradient(to bottom, rgba(0,142,238,0.45) 0%, rgba(0,96,161,1) 80%), image-url('equipment-bg.jpg');
 	background-attachment: scroll, fixed;
+	min-height: 100%;
 }
 
 #equipment-header{
@@ -79,13 +80,13 @@
 		height:100%;
 	}
 
-	.vertical-parent{
+	.vertical-parent-table{
 		height: 100%;
 		display: table;
 
 	}
 
-	.vertical-center{
+	.vertical-center-table{
 		//height: 400px;
 		padding: 1.5rem;
 		display: table-cell;
