@@ -10,7 +10,6 @@
 }
 
 @mixin background($image: none, $size: cover, $position: center, $attachment: scroll, $repeat: no-repeat){
-
   background-image: $image;
   background-size: $size;
   background-position: $position;
@@ -26,7 +25,6 @@
 	@include vendor-prefix(box-shadow, 1px 1px 1px rgba(0,0,0,1));
 	margin-left: auto;
   margin-right: auto;
- 
 }
 
 @mixin circle-icon-image($height, $image-url){
@@ -35,13 +33,19 @@
   background-size: cover;
 }
 
-//Extends
+@mixin content-block($block-num){
+  .content-block-#{$block-num}{
+    margin-top: #{$block-num}rem;
+    margin-bottom: #{$block-num}rem;
+  }
+}
 
+//Extends
 %background{
   @include vendor-prefix(background-size, cover);
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 100%;
+  min-height: 80%;
   height: auto;
   width: 100%;  
 }

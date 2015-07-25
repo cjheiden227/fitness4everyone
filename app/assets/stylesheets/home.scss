@@ -5,7 +5,11 @@
 #home_jumbo.background{
 	background-image: linear-gradient(to bottom, rgba(0,96,161,0) 0%, rgba(0,96,161,1) 100%),  image-url('bg-test.jpg');
 	background-attachment: scroll, fixed;
-	height: 600px;
+	height: 400px;
+
+	@media #{$medium-up}{
+		height: 600px;
+	}
 }
 
 #home_jumbo, #jumbotron{
@@ -13,28 +17,35 @@
 }
 
 #home_jumbo{
+	.jumbo-content{
+		@media #{$super-small-only}{
+			margin-top: 25%;
+		}
+		@media #{$small-only}{
+			margin-top: 25%;
+		}
+	}
+	.fa{
+		padding-left: .5rem;
+		padding-right: .5rem;
+	}
 
-	.border{
-		background: rgba(0,0,0,0.1);
+	#jumbo-header{
+		font-size: 2.5rem;
+		@media #{$medium-up}{
+			font-size: 3rem;
+		}
 	}
 	
 	.bannertext{
+		padding: 1rem 0 1rem; 
+		font-family: $font-family-custom-serif;
 		color: white !important;
-	}
-
-	&:after{
-		position: relative;
-		content: image-url('divider_logo.svg');
-		margin: 0 auto;
-		height: 400px;
-		max-width: 400px;
-		width: 250px;
-		bottom: -100px;
+		text-transform: uppercase;
+		font-size: 1.25rem;
 		@media #{$medium-up}{
-			width: 400px;
-			bottom: -200px;
+			font-size: 1.5rem;
 		}
-		
 	}
 }
 
@@ -44,10 +55,10 @@
 
 #subsection.background{
 	background-color: $primary-blue;
-
 }
 
 #subsection{
+
 	.subheading-row{
 		position: relative;
 	}
@@ -64,8 +75,8 @@
 			height: 640px;
 		}
 		@media #{$super-small-only}{
-			height: 250px;
-			width: 250px;
+			height: 275px;
+			width: 275px;
 		}
 		@media #{$small-only}{
 			height: 300px;
@@ -82,7 +93,20 @@
 		margin: 0 auto;
 		background-repeat: no-repeat;
 	}
+
 	.window-tint{
+		background-color: rgba(0, 24, 41,0.5);
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    border-radius: 50%;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    opacity: 0;
+
 	  	h1{
 	  		@media #{$super-small-only}{
 	  			font-size: 1.8rem;
@@ -95,18 +119,6 @@
 	  	.button-group{
 	  		text-shadow: none;
 	  	}
-
-	    background-color: rgba(0, 24, 41,0.5);
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    right: 0;
-	    bottom: 0;
-	    border-radius: 50%;
-	    display: flex;
-	    justify-content: center;
-	    align-items: center;
-	    opacity: 0;
     }
 
   	.show-for-small-only .row, .show-for-medium-up{
@@ -145,7 +157,7 @@
 #testimonials{
 	@include background(image-url('Underglow.svg'), cover, bottom);
 	padding-bottom: 4rem;
-
+	
 	p{
 		font-family: $testimonial-font;
 		@media #{$super-small-only} {
@@ -188,6 +200,7 @@
 	.testimonial-even{
 		padding-right: 2rem;
 	}
+
 	.vertical-parent{
 		@media #{$super-small-only}{
 			margin-top: rem-calc(30);
@@ -201,12 +214,13 @@
 			margin-top: 0;
 		}
 	}
+
 	.testimonial-row>.row, .vertical-parent{
 		height: 100%;
-	
 	} 
 
 	.talkbubble {
+		@include vendor-prefix(box-shadow, 0px 1px 0px darken($primary-blue, 20%));
 	 	padding: 1rem;
 	   	background: rgba(0, 96, 161, 0.5);
 	   	position: relative;
@@ -214,6 +228,7 @@
 	   	-webkit-border-radius: 10px;
 	   	border-radius:         10px;
 	}
+	
 	.talkbubble:before{
 		content:"";
 	  	position: absolute;
@@ -224,6 +239,7 @@
 	   	width: 0;
 	   	height: 0;
 	}
+
 	.talkbubble.left:before{
 		@media #{$medium-up}{
 	  		left: 100%;
@@ -231,8 +247,8 @@
 	   		border-left: 26px solid rgba(0, 96, 161, 0.5);
 	   		border-bottom: 13px solid transparent;
 	  	}
-	
 	}
+
 	.talkbubble.right:before {
 		@media #{$medium-up}{
 	  		right: 100%;
@@ -241,6 +257,7 @@
 	   		border-bottom: 13px solid transparent;
 	  	} 
 	}
+
 	.talkbubble.up:before {
 		@media #{$super-small-only}{
 	  		left: 50%;

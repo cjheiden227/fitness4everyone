@@ -1,4 +1,3 @@
-
 @import "utils";
 @import "variables";
 @import "foundation/functions";
@@ -30,7 +29,7 @@
 }
 @media #{$super-small-only}{
  	$topbar-title-font-size: rem-calc(16);
- }
+}
 
 html, body{
 	height: 100%;
@@ -41,7 +40,6 @@ html, body{
 #contact-modal{
 	color: darken($primary-blue, 10%);
 }
-
 
 .sent {
 	color: $success-color !important;
@@ -59,18 +57,16 @@ html, body{
 	@media #{medium-up}{
 		padding: 1rem;
 	}
-	border:1px solid $bg-grey;
+	border:3px solid $bg-grey;
 	@include vendor-prefix(box-shadow,  0px 1px 1px 0px rgba(0,0,0,0.25));
 }
 
 #top-overlay{
 	@media #{$super-small-only}{
 		background-color: rgba(255, 255, 255, 0.8);
-
 	}
 	@media #{$small-only}{
 		background-color: rgba(255, 255, 255, 0.8);
-
 	}	
 }
 
@@ -108,19 +104,15 @@ html, body{
 
 .jumbo-content{
 	margin-top: 10%;
+	.border{
+		background: rgba(0,0,0,0.1);
+		padding: 1.5rem 0 1.5rem 0;
+	}
 }
 
-.content-block-5{
-	margin-top: 5rem;
-	margin-bottom: 5rem;
-		
-}
-
-.content-block-2{
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-		
-}
+@include content-block(2);
+@include content-block(5);
+@include content-block(10);
 
 .vertical-parent{
 	position: relative;
@@ -133,6 +125,10 @@ html, body{
 		
 }
 
+.promo{
+	font-size: 1.5rem;
+}
+
 .circle{
 	img{
 		display: block;
@@ -140,34 +136,37 @@ html, body{
         width: 100%; 
 	}
 }
+
 .halfcircle{
 	position: relative;
+	border-bottom: 1px solid rgba(255, 255, 255, 1);
 }
 
+footer.halfcircle:before,
 .halfcircle:after {
 	position: absolute;
 	content:'';
 	left: 50%;
 	z-index: 10;
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
-	background: rgba(0,96,161,1);
+	background-image: image-url('f4e.svg');
+	background-size: cover;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
 
+#testimonials.halfcircle:after {
+	background-image: image-url('f4e-dark.svg');
+}
+
+footer.halfcircle:before{
+	top: -50px;
+}
 
 .halfcircle:after {
 	bottom: -50px;
-}
-
-#curveDownColor{
-	fill: lighten($primary-blue, 10%);
-}
-
-#curveColorTop{
-	fill: darken(rgba(0,111,187,1), 18.5%);
 }
 
 #contact_link.background{
@@ -178,7 +177,8 @@ html, body{
 
 #contact_link.home{
 	background-color: darken($primary-blue, 10%);
-	padding:0 0 2rem 0;
+	padding: 2rem 0 2rem 0;
+
 	#uptriangle{
 		background-color: lighten($primary-blue, 10%);
 		fill: darken($primary-blue, 10%);
@@ -186,10 +186,17 @@ html, body{
 }
 
 #contact_link{
-	padding: 0 0 2rem 0;
+	padding: 2rem 0 2rem 0;
+
+	.contact-p{
+		font-size: 1.6875rem;
+		@media #{$medium-up}{
+			font-size: 2.3125rem;
+		}
+	}
 
 	.circle{
-		@include circle-icon(300);
+		@include circle-icon(200);
 		@media #{$super-small-only}{
 			@include circle-icon(200);
 		}
@@ -197,8 +204,9 @@ html, body{
 			@include circle-icon(200);
 		}
 	}
+
 	.vertical-parent{
-		height: 300px;
+		height: 200px;
 	}
 }
 
@@ -212,9 +220,11 @@ html, body{
 }
 
 #footer{
+
 	.footer-content{
 		margin-top: 10%;
 	}
+
 	.row{
 		height: 100%;
 	}
@@ -245,7 +255,7 @@ html, body{
 			font-size: rem-calc(18);
 			list-style-type: none;
 			display: inline-block;
-					@media #{$small-only}  {
+			@media #{$small-only}  {
 				display: block;
 				padding-left: 0;
 				padding-top: .25rem;

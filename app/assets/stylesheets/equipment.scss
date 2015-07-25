@@ -8,7 +8,7 @@
 }
 
 #equipment-header.background{
-	background-image: linear-gradient(to bottom, rgba(0,142,238,0.45) 0%, rgba(0,88,149,1) 100%), image-url('equipment-bg.jpg');
+	background-image: linear-gradient(to bottom, rgba(0,142,238,0.45) 0%, rgba(0,96,161,1) 80%), image-url('equipment-bg.jpg');
 	background-attachment: scroll, fixed;
 }
 
@@ -25,19 +25,19 @@
 			float: left;
 		}
 		.circle{
-			@include circle-icon(150);
+			@include circle-icon(100);
 			border: 5px solid $bg-grey;
 			
 			@media #{$small-only}{
-				@include circle-icon(100);
+				@include circle-icon(75);
 				
 			}
 			@media #{$super-small-only}{
-				@include circle-icon(100);
+				@include circle-icon(75);
 			
 			}
 			@media #{$screen} and (min-width: 500px) and (min-height:800px) and (max-width:860px){
-				@include circle-icon(100);
+				@include circle-icon(75);
 			
 			}
 		}
@@ -71,51 +71,59 @@
 		text-align: center;
 	}
 
+	.border{
+		padding: 0;
+	}
+
+	.big-box{
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	
+	.img-wrapper{
+		
+		width: 100%;
+		img{
+			height: 100%;
+			width: 100%;
+		}
+	}
 	.heading{
 		height: 100%;
 	}
 
 	.row{
 		@media #{$medium-up}{
-			padding: 2rem 2rem;
 			margin: 0 auto;
 		}	
 		height:100%;
 	}
 
 	.vertical-parent{
-		height: rem-calc(350);
-		@media #{$medium-only}{
-			height: rem-calc(250);
-		}
-		@media #{$super-small-only}{
-			height: rem-calc(200);
-			margin: 2rem 0 2rem 0;
-		}
-		@media #{$small-only}{
-			margin: 3rem 0 3rem 0;
-			height: rem-calc(200);
-		}
+		// height: rem-calc(350);
+		// @media #{$medium-only}{
+		// 	height: rem-calc(250);
+		// }
+		// @media #{$super-small-only}{
+		// 	height: rem-calc(200);
+		// 	margin: 2rem 0 2rem 0;
+		// }
+		// @media #{$small-only}{
+		// 	margin: 3rem 0 3rem 0;
+		// 	height: rem-calc(200);
+		// }
 	}
 
 	.vertical-center{
-		@media #{$medium-up}{
-			padding: 1rem 1rem;
-		}
-	}
-
-	.circle{
-		@include circle-icon(350);
-		border: 15px solid $bg-grey;
-		@media #{$medium-only}{
-			@include circle-icon(250);
+		@media #{$super-small-only}{
+			position: static;
+			top: 0;
+			transform: none;
 		}
 		@media #{$small-only}{
-			@include circle-icon(200);
-				
-		}
-		@media #{$super-small-only}{
-			@include circle-icon(200);
+			position: static;
+			top: 0;
+			transform: none;
 		}
 	}
 }
@@ -131,12 +139,11 @@
 }
 
 #brands{
+	
 	height: auto;
 	.content{
 		padding: 8rem 0 8rem 0;
-		.promo{
-			font-size: 1.25rem;
-		}
+		
 	}
 
 	.logo-block{
