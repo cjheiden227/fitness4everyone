@@ -76,7 +76,10 @@
 		
 		&:after{
 			position: absolute;
-			content: image-url('f4e-blue.svg');
+			@media #{$medium-up}{
+				content: image-url('f4e-blue.svg');
+			}
+			content: image-url('f4e-blue(small).svg');
 			background-color: rgba(0,0,0,.2);
 			height: 100%;
 			width: 100%;
@@ -88,7 +91,10 @@
 	.img-wrapper.even {
 		&:before{
 			position: absolute;
-			content: image-url('f4e-blue.svg');
+			@media #{$medium-up}{
+				content: image-url('f4e-blue.svg');
+			}
+			content: image-url('f4e-blue(small).svg');
 			background-color: rgba(0,0,0,.2);
 			height: 100%;
 			width: 100%;
