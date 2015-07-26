@@ -3,9 +3,10 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(window).scroll ->
   wScroll = $(this).scrollTop()
-  if(wScroll > $('.peri').offset().top - $(window).height())
-      $('.peri').css({
-      	'background-position':'center '+ wScroll - $('.peri').offset().top + 'px'
-      	})
-      opacity = (wScroll - $('.peri').offset().top + 400) / (wScroll / 5)
-      $('.window-tint').css({'opacity': opacity})
+  if $('.peri').length
+    if(wScroll > $('.peri').offset().top - $(window).height())
+        $('.peri').css({
+      	  'background-position':'center '+ wScroll - $('.peri').offset().top + 'px'
+      	  })
+        opacity = (wScroll - $('.peri').offset().top + 400) / (wScroll / 5)
+        $('.window-tint').css({'opacity': opacity})

@@ -54,7 +54,7 @@
 }
 
 #subsection.background{
-	background-color: $primary-blue;
+	background-color: darken($primary-blue, 10%);
 }
 
 #subsection{

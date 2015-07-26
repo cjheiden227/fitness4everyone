@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
 	$(document).foundation('equalizer', 'reflow');
-	console.log("calling thing");
 	$(document).foundation({
 		  equalizer : {
 		    // Specify if Equalizer should make elements equal height once they become stacked.

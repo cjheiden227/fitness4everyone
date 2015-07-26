@@ -129,29 +129,25 @@ html, body{
 .halfcircle{
 	position: relative;
 	border-bottom: 1px solid rgba(255, 255, 255, 1);
+	&:after {
+		position: absolute;
+		content:'';
+		left: 50%;
+		z-index: 10;
+		width: 100px;
+		height: 100px;
+		bottom: -50px;
+		background-image: image-url('f4e.svg');
+		background-size: cover;
+		@include vendor-prefix(transform, translateX(-50%));
+		@include vendor-prefix(border-radius, 50%);
+	}
 }
 
-.halfcircle:after {
-	position: absolute;
-	content:'';
-	left: 50%;
-	z-index: 10;
-	width: 100px;
-	height: 100px;
-	background-image: image-url('f4e.svg');
-	background-size: cover;
-	@include vendor-prefix(transform, translateX(-50%));
-	@include vendor-prefix(border-radius, 50%);
-}
-
-#testimonials.halfcircle:after {
+#subsection.halfcircle:after, #testimonials.halfcircle:after {
 	background-image: image-url('f4e-dark.svg');
 }
 
-
-.halfcircle:after {
-	bottom: -50px;
-}
 
 #contact_link.background{
 	background-image: image-url('triangles.svg');
