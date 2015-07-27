@@ -23,6 +23,10 @@ html, body{
 	color: $white;
 }
 
+body{
+	overflow-x:hidden;
+}
+
 #contact-modal{
 	color: darken($primary-blue, 10%);
 }
