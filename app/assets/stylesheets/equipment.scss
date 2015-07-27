@@ -12,6 +12,10 @@
 	min-height: 100%;
 }
 
+.padder{
+	margin-bottom: 15%;
+}
+
 .eqip-bg{
 	@include background(image-url('Underglow.svg'), contain);
 	padding: 1rem;
