@@ -9,5 +9,16 @@ $(document).ready(function(){
 		    act_on_hidden_el: false
 		  }
 	});
+	// $('.img-wrapper.odd').hover(
+	// 	function(){
+	// 		$(this).children('.icon').animate({
+	// 			left: "100%"
+	// 		}, 400);
+	// 	}, 
+	// 	function(){
+	// 		$(this).children('.icon').animate({
+	// 		left: "50%"
+	// 		}, 400);
+	// 	});
 });
 

@@ -22,4 +22,15 @@
 
 }
 
+@font-face {
+    font-family: 'icomoon';
+    src: url(font_path('icomoon.eot'));
+    src: url(font_path('icomoon.eot?#iefix-eouqfz')) format('embedded-opentype'),
+         url(font_path('icomoon.ttf?-eouqfz')) format('truetype'),
+        url(font_path('icomoon.woff?-eouqfz')) format('woff'),
+        url(font_path('icomoon.svg?-eouqfz#icomoon')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 

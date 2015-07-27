@@ -39,6 +39,7 @@
 		@include vendor-prefix(box-shadow, 0 0 10px 2px rgba(0,0,0,.5));
 		max-width: 400px;
 		margin: 0 auto;
+		overflow: hidden;
 		@media #{$small-only}{
 			width: 100%;
 		}
@@ -54,16 +55,22 @@
 			height: 100%;
 			width: 100%;
 		}
+		.icon-wrapper{
+			height: 100%;
+			width: 100%;
+			@include vendor-prefix(transition, all 400ms ease-in-out);
+			
+		}
+
 		.icon{
 			position: absolute;
 			left: 0;
 			top: 0;
 			@include vendor-prefix(transition, all 400ms ease-in-out);
+			&:hover{
+				@include vendor-prefix(transform, scale(1.2, 1.2));
+			}
 		}
-	}
-
-	.icon:hover{
-		@include vendor-prefix(transform, scale(1.2,1.2));
 	}
 
 	.img-wrapper.odd{
@@ -79,8 +86,12 @@
 		&:before{
 			position: absolute;
 			content: '';
+			@media #{$medium-up}{
+				
+			}
 			background-color: rgba(0,0,0,.2);
 			height: 100%;
+
 			width: 100%;
 			left: 0;
 			top: 0;
@@ -90,7 +101,10 @@
 
 	.img-wrapper.even {
 		&:before{
-			content: '';
+			content:'';
+			@media #{$medium-up}{
+				//content: image-url('f4e-blue.svg');
+			}
 			position: absolute;
 			background-color: rgba(0,0,0,.2);
 			height: 100%;

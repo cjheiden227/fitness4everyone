@@ -54,3 +54,36 @@
     margin: 4rem 0 4rem 0;
 }
 
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-f4e-blue .path1:before {
+  content: "\e600";
+  color: rgb(255, 255, 255);
+}
+.icon-f4e-blue .path2:before {
+  content: "\e601";
+  margin-left: -1em;
+  color: rgb(0, 66, 110);
+}
+.icon-f4e-blue .path3:before {
+  content: "\e602";
+  margin-left: -1em;
+  color: rgb(0, 66, 110);
+}
+.icon-f4e-blue .path4:before {
+  content: "\e603";
+  margin-left: -1em;
+  color: rgb(0, 66, 110);
+}

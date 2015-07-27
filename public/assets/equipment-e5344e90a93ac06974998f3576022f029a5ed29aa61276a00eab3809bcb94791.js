@@ -1,0 +1,1 @@
+$(document).ready(function(){$(document).foundation("equalizer","reflow"),$(document).foundation({equalizer:{equalize_on_stack:!0,act_on_hidden_el:!1}}),$(".img-wrapper.odd").hover(function(){$(this).children(".icon").animate({left:"100%"},400)},function(){$(this).children(".icon").animate({left:"50%"},400)})});
