@@ -1,0 +1,794 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tra",
+				"translate"
+			],
+			[
+				"im",
+				"image-url"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"font",
+				"font_path"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"img",
+				"img-wrapper"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"styl",
+				"stylesheet_link_tag"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"vert",
+				"vertical-align"
+			],
+			[
+				"mei",
+				"medium-up"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"uper",
+				"uppercase"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"content",
+				"content-block"
+			],
+			[
+				"tran",
+				"translateY"
+			],
+			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"mod",
+				"modal-area"
+			],
+			[
+				"un",
+				"unprocessable_entity"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"new",
+				"new_contact"
+			],
+			[
+				"impor",
+				"important"
+			],
+			[
+				"primary",
+				"primary-blue"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"circ",
+				"circle-icon"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"medium",
+				"medium-up"
+			],
+			[
+				"Under",
+				"Underglow"
+			],
+			[
+				"vertica",
+				"vertical-center"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"stroke",
+				"stroke-width"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"med",
+				"meidum-only"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"cir",
+				"circle-icon"
+			],
+			[
+				"light",
+				"lighten"
+			],
+			[
+				"backgrou",
+				"background-image"
+			],
+			[
+				"rem",
+				"rem-calc"
+			],
+			[
+				"super-small",
+				"super-small-only"
+			],
+			[
+				"super",
+				"Supported"
+			],
+			[
+				"small",
+				"small-up"
+			],
+			[
+				"link",
+				"link_to"
+			],
+			[
+				"jubm",
+				"jumbo_button"
+			],
+			[
+				"icon",
+				"icon-img"
+			],
+			[
+				"sup",
+				"super-small-breakpoint"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"m",
+				"margin-top"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"test",
+				"testimonial-row"
+			],
+			[
+				"row",
+				"row"
+			],
+			[
+				"backgroun",
+				"background-size"
+			],
+			[
+				"g",
+				"bg-grey"
+			],
+			[
+				"custom",
+				"font-family-custom-serif"
+			],
+			[
+				"prim",
+				"primary-blue"
+			],
+			[
+				"fff",
+				"FFFFFF"
+			],
+			[
+				"alert",
+				"alert-color"
+			],
+			[
+				"logo",
+				"logo-font"
+			],
+			[
+				"st",
+				"stylesheet_link_tag"
+			],
+			[
+				"cot",
+				"contact_params"
+			],
+			[
+				"Ma",
+				"MANDRILL_LOGIN"
+			],
+			[
+				"movie",
+				"movie_queue"
+			],
+			[
+				"templa",
+				"template_content"
+			],
+			[
+				"action",
+				"action_mailer"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/assets/stylesheets/equipment.scss",
+			"settings":
+			{
+				"buffer_size": 3429,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/equipment/partials/_jumbo.html.erb",
+			"settings":
+			{
+				"buffer_size": 1066,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 167.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/chris/Projects/fitness_4_everyone",
+		"/home/chris/Projects/fitness_4_everyone/app",
+		"/home/chris/Projects/fitness_4_everyone/app/assets",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/javascripts",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets",
+		"/home/chris/Projects/fitness_4_everyone/app/mailers",
+		"/home/chris/Projects/fitness_4_everyone/app/views",
+		"/home/chris/Projects/fitness_4_everyone/app/views/equipment",
+		"/home/chris/Projects/fitness_4_everyone/app/views/equipment/partials",
+		"/home/chris/Projects/fitness_4_everyone/app/views/shared",
+		"/home/chris/Projects/fitness_4_everyone/app/views/trainer",
+		"/home/chris/Projects/fitness_4_everyone/app/views/trainer/partials",
+		"/home/chris/Projects/fitness_4_everyone/config",
+		"/home/chris/Projects/fitness_4_everyone/config/environments",
+		"/home/chris/Projects/fitness_4_everyone/lib"
+	],
+	"file_history":
+	[
+		"/home/chris/Projects/fitness_4_everyone/app/assets/javascripts/equipment.js",
+		"/home/chris/Projects/fitness_4_everyone/app/views/equipment/partials/_equipment.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/globals.scss",
+		"/home/chris/Projects/fitness_4_everyone/config/environments/production.rb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/f4e-blue.svg",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/utils.scss",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/font_faces.css.scss",
+		"/home/chris/Projects/fitness_4_everyone/Gemfile",
+		"/home/chris/Projects/fitness_4_everyone/Procfile",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/javascripts/home_page.coffee",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/home.scss",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/footer.svg",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/divider_logo.svg",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/dummy2.jpg",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/equipment-header-1.jpg",
+		"/home/chris/Projects/fitness_4_everyone/config/initializers/assets.rb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/javascripts/application.js",
+		"/home/chris/Projects/fitness_4_everyone/app/views/home_page/index.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/views/equipment/partials/_jumbo.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/application.css",
+		"/home/chris/Projects/fitness_4_everyone/app/views/equipment/index.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/equipment.scss",
+		"/home/chris/Projects/fitness_4_everyone/app/views/layouts/application.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/views/home_page/partials/_subsection.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/views/trainer/partials/_certs.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/views/home_page/partials/_jumbo.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/trainer.scss",
+		"/home/chris/Projects/fitness_4_everyone/app/views/home_page/partials/_contact_link.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/views/home_page/partials/_testimonials.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/f4e.svg",
+		"/home/chris/Projects/fitness_4_everyone/app/views/trainer/partials/_jumbo.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/views/shared/_contact.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/views/equipment/partials/_brands.html.erb",
+		"/home/chris/Downloads/SectionSeparators/css/component.css",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/contacts.scss",
+		"/home/chris/Projects/fitness_4_everyone/app/views/layouts/partials/_footer.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/variables.scss",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/uptriangle.svg",
+		"/home/chris/Projects/fitness_4_everyone/app/views/trainer/index.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/views/contacts/index.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/javascripts/contacts.coffee",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/javascripts/validation.js",
+		"/home/chris/Projects/fitness_4_everyone/config/database.yml",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/javascripts/rails.validations.customValidators.js",
+		"/home/chris/Projects/fitness_4_everyone/app/controllers/contacts_controller.rb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/foundation_and_overrides.scss",
+		"/home/chris/Projects/fitness_4_everyone/app/helpers/application_helper.rb",
+		"/home/chris/Projects/fitness_4_everyone/config/application.rb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/javascripts/rails.validations.js",
+		"/home/chris/Projects/fitness_4_everyone/config/initializers/client_side_validations.rb",
+		"/home/chris/Projects/fitness_4_everyone/app/models/contact.rb",
+		"/home/chris/Projects/fitness_4_everyone/lib/email_format_validator.rb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/javascripts/rails.validations.custom.js",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/javascripts/contacts.js",
+		"/home/chris/Projects/fitness_4_everyone/config/locales/en.yml",
+		"/home/chris/Projects/fitness_4_everyone/config/routes.rb",
+		"/home/chris/Projects/fitness_4_everyone/config/initializers/simple_form.rb",
+		"/home/chris/Projects/fitness_4_everyone/app/views/layouts/partials/_header.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/views/contact/index.html.erb",
+		"/home/chris/Projects/HPC-Rails/app/controllers/home_page_controller.rb",
+		"/home/chris/Projects/HPC-Rails/app/views/home_page/_form.html.erb",
+		"/home/chris/Projects/HPC-Rails/Gemfile",
+		"/home/chris/Projects/fitness_4_everyone/app/views/contacts/_form.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/views/trainer/partials/_awards.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/views/home_page/partials/_subsection1.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/waves.svg",
+		"/home/chris/Projects/fitness_4_everyone/app/views/equipment/partials/_contact.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/extends.scss",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/mixins.scss",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/triangles.svg",
+		"/home/chris/Downloads/SectionSeparators/css/demo.css",
+		"/home/chris/Downloads/SectionSeparators/index.html",
+		"/home/chris/Downloads/SectionSeparators/css/icons.css",
+		"/home/chris/Downloads/SectionSeparators/css/normalize.css",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/drawing.svg",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/Underglow3.svg",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/triangles2.svg",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/header.svg",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/Underglow2.svg",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/equipment-bg.svg",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/circle-bg.svg",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/home.scss.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/globals.scss.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/equipment.scss.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/line.svg",
+		"/home/chris/Projects/fitness_4_everyone/app/controllers/equipment_controller.rb",
+		"/home/chris/Projects/fitness_4_everyone/app/controllers/trainer_controller.rb",
+		"/home/chris/Projects/fitness_4_everyone/app/models/user.rb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/trainer.scss.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/images/Circular-Overlap.svg",
+		"/home/chris/Projects/fitness_4_everyone/app/views/layouts/_header.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/views/layouts/_footer.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/custom.scss",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/fonts/stylesheet.css.scss",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/application.css.scss",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/fonts/stylesheet.scss",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/fonts/stylesheet.css",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/web fonts/aleo_bold_macroman/Aleo-Bold-webfont.eot",
+		"/home/chris/Projects/fitness_4_everyone/app/assets/stylesheets/web fonts/aleo_bold_macroman/stylesheet.css",
+		"/home/chris/Projects/fitness_4_everyone/config/boot.rb",
+		"/home/chris/Projects/fitness_4_everyone/app/controllers/users_controller.rb",
+		"/home/chris/Projects/fitness_4_everyone/app/views/users/_form.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/config/initializers/mail.rb",
+		"/home/chris/Projects/fitness_4_everyone/app/mailers/contact_mailer.rb",
+		"/home/chris/.config/flexget/series_hd.yml",
+		"/home/chris/Downloads/config.yml",
+		"/home/chris/.config/flexget/config.yml",
+		"/home/chris/Projects/fitness_4_everyone/app/views/users/index.html.erb",
+		"/home/chris/.config/flexget/transmission.yml",
+		"/home/chris/Projects/HPC-Rails/app/models/message.rb",
+		"/home/chris/Projects/HPC-Rails/config/routes.rb",
+		"/home/chris/Projects/HPC-Rails/app/controllers/application_controller.rb",
+		"/home/chris/Projects/HPC-Rails/app/controllers/messages_controller.rb",
+		"/home/chris/Projects/fitness_4_everyone/app/views/contact_mailer/new_message.html.erb",
+		"/home/chris/Projects/fitness_4_everyone/config/environments/development.rb",
+		"/home/chris/Projects/fitness_4_everyone/app/mailers/application_mailer.rb",
+		"/home/chris/.config/flexget/series.yml"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 111.0,
+		"where_history":
+		[
+			"",
+			"/home/chris/Projects/fitness_4_everyone/app/views"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"0",
+			"footerlogo.png",
+			"uptriangle.svg",
+			"triangles.svg",
+			"vertical-parent",
+			"vertical-center",
+			"fade-in",
+			"medium-collapse",
+			"			\n",
+			"odio",
+			"border",
+			"100",
+			"background",
+			"gif",
+			">\n",
+			"gif",
+			"reveal",
+			"modalemail",
+			"-",
+			"add",
+			"(",
+			"\">\n",
+			"message",
+			"\n ",
+			"reveal",
+			"forms",
+			"form",
+			"placeholder",
+			"forms",
+			"10",
+			"		\n",
+			"<%=render '/layouts/partials/footer'%>",
+			"			$",
+			"forms",
+			"drawing.svg",
+			"100",
+			"0",
+			"margin",
+			"meet",
+			"85",
+			"col-2 ss-style-halfcircle",
+			"85",
+			"300",
+			"stroke-width=\"1\"",
+			"stroke-width=\"null\"",
+			"stroke=\"null\"",
+			"#005895",
+			"#008eee",
+			"008eee",
+			"000000",
+			"8",
+			"e5e5e5",
+			"b2b2b2",
+			"null",
+			"0.35",
+			"opacity=\"0.35\"",
+			"opacity=\"0.35\" ",
+			"\"\"",
+			"0.5",
+			"5",
+			"240",
+			"curveUp",
+			"svg",
+			"25",
+			"300",
+			">\n",
+			"p",
+			"color: $white",
+			"columns",
+			"0px",
+			"$jumbo",
+			"padding",
+			"body-bg",
+			"h1",
+			"6",
+			"  @",
+			"<a href=\"#\"></a>",
+			"text-shadow",
+			"\">\n",
+			"class=\"text-shadow\">",
+			"class=\"text-shadow\"",
+			"\">\n",
+			"class=\"text-shadow\">",
+			"class=\"text-shadow\"",
+			"90",
+			"testimonial-text",
+			"300",
+			"2rem",
+			"medium-range",
+			"Aleo-Bold",
+			"webfont",
+			"Aleo-Bold-webfont",
+			"Aleo-Bold-",
+			"font",
+			"50px",
+			"text-sha",
+			"		stroke: rgba(253, 253, 253, .05);\n        stroke-width: 2;",
+			"		\n",
+			" \n",
+			"161",
+			"96",
+			"75%",
+			"200,200",
+			"200,300",
+			"button-border",
+			"button",
+			"success-color",
+			"button",
+			"custom",
+			"transparent",
+			"a",
+			"class=\"active\"><",
+			"class=\"active\"",
+			"class=\"active\"><",
+			"class=\"active\"",
+			"section",
+			"darken",
+			"topbar-height",
+			" $body-font-family",
+			"url",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"new_user_message",
+			"user",
+			"User",
+			"user",
+			"User",
+			"@user",
+			"user_params"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/assets/stylesheets/equipment.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3429,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								355,
+								355
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/equipment/partials/_jumbo.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1066,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								919,
+								919
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 53.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 136.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "fitness4everyone.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"drawing.svg",
+				"app/assets/images/drawing.svg"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 323.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

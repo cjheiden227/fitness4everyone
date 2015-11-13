@@ -26,10 +26,7 @@
 
 #equipment{
 	height: auto;	
-	@media #{$medium-up}{
-		@include background(image-url('hawaii1.svg'),contain, center center);
-			
-	}
+
 	@media #{$super-small-only}{
 		
 		text-align: center;
@@ -167,9 +164,6 @@
 	.logo-block{
 		padding: 4rem 0 4rem 0;
 		
-		ul:nth-of-type(2){
-			padding: 2rem 0 2rem 0;
-		}
 	}
 
 	.circle{
