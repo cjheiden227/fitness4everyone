@@ -124,7 +124,7 @@
 	}
 }
 
-#testimonials .row{
+#locations .row{
 	margin-top: 2rem;
 	@media #{$small-only} {
 		margin-top: 1rem;
@@ -135,120 +135,10 @@
 
 }
 
-#testimonials{
-	@include background(image-url('Underglow.svg'), cover, bottom);
-	padding-bottom: 4rem;
+#locations>.content-block-10{
+	@include background(image-url('hawaii1.svg'), contain, center center);
 	
-	p{
-		font-family: $testimonial-font;
-		@media #{$super-small-only} {
-			font-size: .85rem;
-		}
-	}
-
-  	.testimonial-row{
-  		height: rem-calc(300);
- 
-  		@media #{$small-only} {
-			height: rem-calc(250);
-		}
-		@media #{$super-small-only} {
-			height: rem-calc(250);
-		}
 	
-  	}
-
-  	.circle{
-		@include circle-icon(300);
-	  	@media #{$small-only} {
-			@include circle-icon(250);
-		}
-		@media #{$super-small-only} {
-			@include circle-icon(250);
-		}
-	}
-
-  	p.author{
-  		font-size: 1.25rem;
-		text-align: right;
-  	
-	}
-	
-	.testimonial-even{
-		padding-right: 2rem;
-	}
-
-	.vertical-parent{
-		@media #{$super-small-only}{
-			margin-top: rem-calc(30);
-		}
-
-		@media #{$small-only}{
-			margin-top: rem-calc(30);
-		}
-		
-		@media #{$medium-up}{
-			margin-top: 0;
-		}
-	}
-
-	.testimonial-row>.row, .vertical-parent{
-		height: 100%;
-	} 
-
-	.talkbubble {
-		@include vendor-prefix(box-shadow, 0px 1px 0px darken($primary-blue, 20%));
-	 	@include vendor-prefix(border-radius, 10px);
-	 	padding: 1rem;
-	   	background: rgba(0, 96, 161, 0.5);
-	   	position: relative;
-	}
-	
-	.talkbubble:before{
-		content:"";
-	  	position: absolute;
-	  	@media #{$medium-up}{
-	  		top: 30%;
-	  	}
-	  	top: -26px;
-	   	width: 0;
-	   	height: 0;
-	}
-
-	.talkbubble.left:before{
-		@media #{$medium-up}{
-	  		left: 100%;
-			border-top: 13px solid transparent;
-	   		border-left: 26px solid rgba(0, 96, 161, 0.5);
-	   		border-bottom: 13px solid transparent;
-	  	}
-	}
-
-	.talkbubble.right:before {
-		@media #{$medium-up}{
-	  		right: 100%;
-	   		border-top: 13px solid transparent;
-	   		border-right: 26px solid rgba(0, 96, 161, 0.5);
-	   		border-bottom: 13px solid transparent;
-	  	} 
-	}
-
-	.talkbubble.up:before {
-		@media #{$super-small-only}{
-	  		left: 50%;
-	  		margin-left:-13px;
-	   		border-left: 13px solid transparent;
-	   		border-bottom: 26px solid rgba(0, 96, 161, 0.5);
-	   		border-right: 13px solid transparent;
-	  	} 
-	  	@media #{$small-only}{
-	  		left: 50%;
-	  		margin-left:-13px;
-	   		border-left: 13px solid transparent;
-	   		border-bottom: 26px solid rgba(0, 96, 161, 0.5);
-	   		border-right: 13px solid transparent;
-	  	} 
-	}
 }
 
 
