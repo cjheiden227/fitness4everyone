@@ -5,23 +5,19 @@
 			<div class="row">
 				<div class="border small-centered small-9 columns">
 					<nav>
-					<ul id="footerNav">
+					<ul class="footerNav">
 						<li><%=link_to("Home", root_path, class: is_active?(root_path))%></li>
 						<li><%=link_to("Equipment", equipment_path, class: is_active?(equipment_path))%></li>
 						<li><%=link_to("Personal Training", trainer_path, class: is_active?(trainer_path))%></li>
 						<li><%=link_to("Contact", contact_path, class: is_active?(contact_path))%></li>
 					</ul>
 					</nav>
-					<h5>The Foundation of <span class="logo-font">Fitness for Everyone</span></h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ut, veritatis repellat? Nihil molestias aliquid, unde porro reprehenderit officiis eius fugiat, non voluptatibus, quo accusamus animi quia quas sint aspernatur.</p> 
-		<!-- 			<h6>Find Fitness for Everyone on your social network!</h6>
-					<ul class="icons">
-						<li><a target="_blank" href="http://www.facebook.com"><%=image_tag('facebook.png', class: "icon-img")%></a></li>
-						<li><a target="_blank" href="http://www.twitter.com"><%=image_tag('twitter.png', class: "icon-img")%></a></li>
-						<li><a target="_blank" href="http://www.linkedin.com"><%=image_tag('linkedin.png', class: "icon-img")%></a></li>
-					</ul> -->
+					<ul class="footerNav">
+						<li>Phone: <a href="tel:1-808-268-5466">(808)-268-5466</a> </li>
+						<li>Email: <a href="mailto:fitness@fitness4everyone.com"> fitness@fitness4everyone.com</a></li> 
+					</ul>
+					
 				</div>
-			
 			</div>
 		</div>
 	</div>

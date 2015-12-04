@@ -134,14 +134,10 @@
 
 	.vertical-parent-table{
 		height: 100%;
-		display: table;
-
 	}
 
 	.vertical-center-table{
 		padding: 1.5rem;
-		display: table-cell;
-		vertical-align: middle;
 		position: static;
 		top: 0;
 		transform: none;

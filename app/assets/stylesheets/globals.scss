@@ -64,7 +64,7 @@ body{
   	background: $clear; 
 }
 
-#top-overlay li>a, #footer #footerNav li>a {
+#top-overlay li>a, #footer .footerNav li>a {
 	@include vendor-prefix(transition, all 200ms ease-in-out);
 }
 
@@ -115,6 +115,18 @@ body{
 		
 }
 
+.vertical-parent-table{
+	height: 100%;
+	display: table;
+
+}
+
+.vertical-center-table{
+
+	display: table-cell;
+	vertical-align: middle;
+		
+}
 .promo{
 	font-size: 1.15909rem;
 	@media #{$medium-up}{
@@ -230,7 +242,7 @@ body{
 		}
 	}
 
-	#footerNav{
+	.footerNav{
 		padding: 1.5rem 0 .75rem 0;
 		margin: 0 auto;
 		font-family: $font-family-custom-serif;
